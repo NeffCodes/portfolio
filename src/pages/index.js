@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
-
+import App from './app';
 import '../styles/main.css';
-import Nav from '../components/nav/nav';
+
 
 const IndexPage = () => {
   return (
@@ -13,8 +13,7 @@ const IndexPage = () => {
         <html lang='en'/>
         <meta name='description' content='Persigio Portfolio'/>
       </Helmet>
-      
-      <Nav />
+      <App />
     </>
   )
 }
