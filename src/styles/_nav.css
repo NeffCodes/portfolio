@@ -11,14 +11,14 @@ nav ul{
     padding: 0;
     margin: 0;
 }
-/* phone & ipad */
+/* phone*/
 @media screen and (max-width:767px){
     nav{
         bottom: 0;
     }
 }
 
-/* Laptop & up */
+/* Ipad & up */
 @media screen and (min-width: 768px) {
     nav{
         top: 0;
