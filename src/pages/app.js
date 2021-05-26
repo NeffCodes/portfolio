@@ -1,9 +1,13 @@
 import React from 'react';
 import Nav from '../components/nav/nav';
+import Hero from '../components/hero/hero';
 
 function App() {
     return(
-       <Nav /> 
+        <main>
+            <Nav /> 
+            <Hero />
+        </main>
     )
 }
 
