@@ -15,3 +15,22 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500; 
 }
+
+h1, h2{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--primary-light);
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--primary-dark);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 0 2.4em;
+}
