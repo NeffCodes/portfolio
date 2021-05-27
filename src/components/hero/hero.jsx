@@ -11,7 +11,7 @@ class Hero extends React.Component {
                 <br/>
                 a real person
                 </h1>
-                <Button class='primary' type='Check Me Out' />
+                <Button class='btn primary' content='Check Me Out' />
             </section>
         )
     }
