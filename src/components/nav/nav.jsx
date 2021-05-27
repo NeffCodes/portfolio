@@ -6,7 +6,7 @@ class Nav extends React.Component {
         return (
             <nav role='navigation'>
                 <ul>
-                    <NavItem destination='' title='About' icon=''/>
+                    <NavItem destination='#About' title='About' icon=''/>
                     <NavItem destination='' title='Works' icon=''/>
                     <NavItem destination='' title='Contact' icon=''/>
                 </ul>

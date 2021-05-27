@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Button from '../button/button';
 
 class Hero extends React.Component {
@@ -11,7 +10,7 @@ class Hero extends React.Component {
                 <br/>
                 a real person
                 </h1>
-                <Button class='btn primary' content='Check Me Out' />
+                <Button class='btn primary' content='Check Me Out' destination='#About'/>
             </section>
         )
     }
