@@ -7,7 +7,7 @@ const Nav = () => {
             <ul>
                 <NavItem destination='#About' title='About' icon=''/>
                 <NavItem destination='#' title='Works' icon=''/>
-                <NavItem destination='#' title='Contact' icon=''/>
+                <NavItem destination='#Contact' title='Contact' icon=''/>
             </ul>
         </nav>
     )
