@@ -7,13 +7,15 @@ import Footer from '../components/footer/footer';
 
 const App = () => {
     return(
+        <>
+        <Nav /> 
         <main>
-            <Nav /> 
             <Hero />
             <About />
             <Contact />
-            <Footer />
         </main>
+        <Footer />
+        </>
     )
 }
 
