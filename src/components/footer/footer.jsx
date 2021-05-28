@@ -1,9 +1,10 @@
 import React from 'react';
+import {SocialIcons} from './footerIcons';
 
 const Footer = () => {
     return(
         <footer>
-            icons
+            <SocialIcons />
             <hr />
             <p>
                 Copyright &#169; {new Date().getFullYear()} - James Neff

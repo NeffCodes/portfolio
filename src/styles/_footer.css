@@ -1,5 +1,6 @@
 footer {
     min-height: 170px;
+    width: 100vw;
     padding: 2.4rem;
     background-color: var(--primary-dark);
     color: var(--secondary-dark);
@@ -18,4 +19,18 @@ hr {
     color: var(--secondary-dark);
     background-color: var(--secondary-dark);
     border-style: solid;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons > a {
+    margin: 0 1.8rem 0.5rem;
+}
+
+.social-icons > a:hover, 
+.social-icons > a:focus {
+    color: var(--primary-color-shade);
+    background-color: var(--primary-dark);
 }
