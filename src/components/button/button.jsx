@@ -1,12 +1,9 @@
 import React from 'react';
-class Button extends React.Component {
-    render(){
-        return (
-            <a className={this.props.class} href={this.props.destination}>
-                {this.props.content}
-            </a>
-        )
-    }
-}
 
-export default Button;
+export const Button = ({classes, destination, content}) => {
+    return (
+        <a className={classes} href={destination}>
+            {content}
+        </a>
+    )
+}

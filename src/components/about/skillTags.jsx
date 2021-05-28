@@ -1,11 +1,16 @@
 import React from 'react';
 
-const SkillTags = () => {
+export const SkillTags = () => {
     const skills = ['css3-alt','html5','js-square','react','node','figma'];
-
-    {skills.forEach( skill => {
-        return (<i className={`fab fa-${skill} fa-3x`}/>)
-    });}
+    return (
+        <span className='icons'>
+        {
+            skills.map( skill => {
+                return(
+                    <i className={`fab fa-${skill} fa-3x`}/>
+                );
+            })
+        }
+        </span>
+    )
 }
-
-export default SkillTags;

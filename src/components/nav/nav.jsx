@@ -1,18 +1,16 @@
 import React from 'react';
-import NavItem from '../navItem/navItem';
+import {NavItem} from './navItem';
 
-class Nav extends React.Component {
-    render(){
-        return (
-            <nav role='navigation'>
-                <ul>
-                    <NavItem destination='#About' title='About' icon=''/>
-                    <NavItem destination='' title='Works' icon=''/>
-                    <NavItem destination='' title='Contact' icon=''/>
-                </ul>
-            </nav>
-        )
-    }
+const Nav = () => {
+    return (
+        <nav role='navigation'>
+            <ul>
+                <NavItem destination='#About' title='About' icon=''/>
+                <NavItem destination='#' title='Works' icon=''/>
+                <NavItem destination='#' title='Contact' icon=''/>
+            </ul>
+        </nav>
+    )
 }
 
 export default Nav;
