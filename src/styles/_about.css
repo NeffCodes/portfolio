@@ -1,10 +1,11 @@
-h2{
-    color: var(--primary-dark);
-}
-
 .about {
     min-height: 100vh;
     height: 100vh;
+}
+
+.about > h2, 
+.about > p {
+    color: var(--primary-dark);
 }
 
 .icons{
