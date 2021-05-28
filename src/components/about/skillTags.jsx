@@ -5,9 +5,9 @@ export const SkillTags = () => {
     return (
         <span className='icons'>
         {
-            skills.map( skill => {
+            skills.map( (skill, index) => {
                 return(
-                    <i className={`fab fa-${skill} fa-3x`}/>
+                    <i key={index} className={`fab fa-${skill} fa-3x`}/>
                 );
             })
         }
