@@ -2,9 +2,9 @@ import React from 'react';
 
 export const SocialIcons = () => {
     const socials = [
-        {name: 'git', icon:'git-alt', destination: ''},
-        {name: 'codepen', icon: 'codepen', destination: ''},
-        {hame: 'linkedin', icon: 'linkedin', destination: ''}
+        {name: 'git', icon:'git-alt', destination: 'https://github.com/persigio'},
+        {name: 'codepen', icon: 'codepen', destination: 'https://codepen.io/Persigio'},
+        {hame: 'linkedin', icon: 'linkedin', destination: 'https://www.linkedin.com/in/james-m-neff/'}
     ];
     return (
         <span className='social-icons'>
