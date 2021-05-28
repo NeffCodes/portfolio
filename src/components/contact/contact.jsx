@@ -10,7 +10,7 @@ const Contact = () => {
             <p>
                 Would you like to work with me or have a question? Don't be shy, let me know! 
             </p>
-            <Button classes='btn primary' content='See My Work' />
+            <Button classes='btn primary' content="Let's Talk" />
         </section>
     )
 }
