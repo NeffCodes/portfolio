@@ -6,3 +6,10 @@ h2{
     min-height: 100vh;
     height: 100vh;
 }
+
+.icons{
+    color: var(--secondary-dark);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
