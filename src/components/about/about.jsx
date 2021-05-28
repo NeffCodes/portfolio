@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../button/button';
-import SkillTag from './skillTags';
+import SkillTags from './skillTags';
 
 class About extends React.Component {
     render (){
@@ -13,12 +13,7 @@ class About extends React.Component {
                     Blah blah blah, I need to figure out my short elevator pitch to put here. Yadda yadaa, in short, please hire me, I would like money. 
                 </p>
                 <span className='icons'>
-                    <SkillTag name='css3-alt'/>
-                    <SkillTag name='html5'/>
-                    <SkillTag name='js-square'/>
-                    <SkillTag name='react'/>
-                    <SkillTag name='node'/>
-                    <SkillTag name='figma'/>
+                    <SkillTags />
                 </span>
                 <Button class='btn primary' content='See My Work' />
             </section>

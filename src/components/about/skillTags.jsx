@@ -1,11 +1,11 @@
 import React from 'react';
 
-class SkillTag extends React.Component {
-    render (){
-        return(
-            <i className={`fab fa-${this.props.name} fa-3x`}/>
-        )
-    }
+const SkillTags = () => {
+    const skills = ['css3-alt','html5','js-square','react','node','figma'];
+
+    {skills.forEach( skill => {
+        return (<i className={`fab fa-${skill} fa-3x`}/>)
+    });}
 }
 
-export default SkillTag;
+export default SkillTags;
