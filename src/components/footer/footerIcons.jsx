@@ -7,7 +7,7 @@ export const SocialIcons = () => {
         {hame: 'linkedin', icon: 'linkedin', destination: 'https://www.linkedin.com/in/james-m-neff/'}
     ];
     return (
-        <span className='social-icons'>
+        <div className='social-icons'>
         {
             socials.map( (social) => {
                 if(social){
@@ -25,6 +25,6 @@ export const SocialIcons = () => {
                 }
             })
         }
-        </span>
+        </div>
     )
 }
