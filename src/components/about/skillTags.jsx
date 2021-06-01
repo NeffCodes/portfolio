@@ -18,15 +18,15 @@ export const SkillTags = () => {
             skills.map( (skill) => {
                 return(
                     <>
-                    <i 
-                    key={skill.name} 
-                    className={`fab fa-${skill.icon} fa-3x`} 
-                    title={skill.name}
-                    aria-hidden='true'
-                    />
-                    <span class='sr-only'>
-                        {skill.name}
-                    </span>
+                        <i 
+                        key={skill.name} 
+                        className={`fab fa-${skill.icon} fa-3x`} 
+                        title={skill.name}
+                        aria-hidden='true'
+                        />
+                        <span class='sr-only'>
+                            {skill.name}
+                        </span>
                     </>
                 );
             })
