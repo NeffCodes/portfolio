@@ -1,5 +1,5 @@
 footer {
-    min-height: 170px;
+    min-height: 150px;
     padding: 2.4rem;
     background-color: var(--primary-dark);
     color: var(--secondary-dark);
@@ -32,4 +32,10 @@ hr {
 .social-icons > a:focus {
     color: var(--primary-color-shade);
     background-color: var(--primary-dark);
+}
+
+@media screen and (min-width:768px) {
+    footer{
+        justify-content: center;
+    }
 }
