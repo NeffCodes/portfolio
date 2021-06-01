@@ -5,11 +5,10 @@ const Contact = () => {
     return(
         <section className='contact' id='Contact'>
             <h2>
-                Contact
+                Say Hello
             </h2>
-            <p>
-                Would you like to work with me or have a question? Don't be shy, let me know! 
-            </p>
+            <p>Would you like to work with me or have a question?</p>
+            <p>Don't be shy, let me know! </p>
             <Button classes='btn primary' content="Let's Talk" destination='mailto:test@gmail.com'/>
         </section>
     )
