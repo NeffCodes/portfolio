@@ -1,16 +1,36 @@
 import React from 'react';
 
 export const SkillTags = () => {
-    const skills = ['css3-alt','html5','js-square','react','node','figma'];
+    
+    const skills = [
+        {name:'CSS', icon:'css3-alt'},
+        {name:'HTML5', icon:'html5'},
+        {name:'Javascript', icon:'js-square'},
+        {name:'React-Redux', icon:'react'},
+        {name:'git', icon:'git'},
+        {name:'Figma', icon:'figma'},
+        {name:'Node', icon:'node'}
+        ];
+
     return (
-        <span className='icons'>
+        <div className='icons'>
         {
             skills.map( (skill, index) => {
                 return(
-                    <i key={index} className={`fab fa-${skill} fa-3x`}/>
+                    <>
+                    <i 
+                    key={skill.name} 
+                    className={`fab fa-${skill.icon} fa-3x`} 
+                    title={skill.name}
+                    aria-hidden='true'
+                    />
+                    <span class='sr-only'>
+                        {skill.name}
+                    </span>
+                    </>
                 );
             })
         }
-        </span>
+        </div>
     )
 }
