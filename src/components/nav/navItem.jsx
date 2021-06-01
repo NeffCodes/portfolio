@@ -1,9 +1,8 @@
 import React from 'react';
 
-export const NavItem = ({title, destination, icon}) => {
+export const NavItem = ({title, destination, icon, hidden}) => {
     return (
-        <li>
-            
+        <li hidden={hidden}>
             <a href={destination}>
                 <i className={`${icon} fa-sm`}/>
                 {title}
