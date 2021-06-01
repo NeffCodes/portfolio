@@ -2,8 +2,8 @@ import React from 'react';
 
 export const SocialIcons = () => {
     const socials = [
-        {name: 'git', icon:'git-alt', destination: 'https://github.com/persigio'},
         {name: 'codepen', icon: 'codepen', destination: 'https://codepen.io/Persigio'},
+        {name: 'github', icon:'github', destination: 'https://github.com/persigio'},
         {hame: 'linkedin', icon: 'linkedin', destination: 'https://www.linkedin.com/in/james-m-neff/'}
     ];
     return (
