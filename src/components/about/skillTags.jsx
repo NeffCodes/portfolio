@@ -15,7 +15,7 @@ export const SkillTags = () => {
     return (
         <div className='icons'>
         {
-            skills.map( (skill, index) => {
+            skills.map( (skill) => {
                 return(
                     <>
                     <i 
