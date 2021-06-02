@@ -18,8 +18,8 @@ a:active {
     color: var(--primary-light);
 }
 
-/* Ipad & up */
-@media screen and (min-width: 768px) {
+/* Horizontal Ipad & up */
+@media screen and (min-width: 1024px) {
     li{
         max-width: 14vw;
     }
