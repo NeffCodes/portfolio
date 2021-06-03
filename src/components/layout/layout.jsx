@@ -9,7 +9,7 @@ const Layout = ({children, pageTitle}) => {
         <div className={layout}>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>JNeff: {pageTitle}</title>
+                <title>JNeff: {pageTitle || 'Portfolio'}</title>
                 <html lang='en'/>
                 <meta name='description' content='JNeff Portfolio'/>
                 <script src="https://kit.fontawesome.com/05e397c018.js" crossorigin="anonymous"></script>
