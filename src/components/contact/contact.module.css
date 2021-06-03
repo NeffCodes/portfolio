@@ -1,0 +1,6 @@
+.contact {
+    background-color: var(--primary-dark);
+    height: calc(100vh - 198px);
+    min-height: calc(100vh - 198px);
+    color: var(--primary-light)
+}
