@@ -1,0 +1,64 @@
+nav {
+    position: fixed;
+    background-color: var(--primary-dark);
+    width: 100vw;
+    z-index: 999;
+    bottom: 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+li {
+    font-size: 1.8em;
+    flex-grow:1;
+    font-weight: 700;
+    color: var(--secondary-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-dark);
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+}
+a:hover, 
+a:active {
+    background-color: var(--primary-color);
+    color: var(--primary-light);
+}
+
+/* Horizontal Ipad & up */
+@media screen and (min-width: 1024px) {
+    nav{
+        top: 0;
+        bottom: auto;
+    }
+    
+    ul{
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 6.4em
+    }
+
+    li{
+        max-width: 14vw;
+    }
+
+    li:first-of-type{
+        position: absolute;
+        left: 6.4rem;
+        font-size: 2em;
+    }
+    
+    a{
+        padding-top: 1em;
+    }
+}
