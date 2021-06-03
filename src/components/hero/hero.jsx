@@ -1,9 +1,10 @@
 import React from 'react';
 import {Button} from '../button/button';
+import {hero} from './hero.module.css';
 
 const Hero = () => {
     return(
-        <section className='hero'>
+        <section className={hero}>
             <h1>
             Ciao! I am <span style={{color: 'var(--primary-color)'}}>Persigio,</span>
             <br/>
