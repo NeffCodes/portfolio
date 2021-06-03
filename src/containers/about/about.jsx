@@ -1,34 +1,40 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { InternalButton } from '../../components/button/internalButton/internalButton';
 import {SkillTags} from './skillTags';
+import { getWidth } from '../../components/logic';
+import { description, portrait, shape } from './about.module.css';
 
 const About = () => {
-
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
-
+    const [width, setWidth] = useState(getWidth());
+    
+    //useEffect courtesy of Vitalie Maldur from dev.to
     useEffect(() => {
-        if (window.innerWidth < 1024) {
-            setIsLargeScreen(false);
-        } else {
-            setIsLargeScreen(true);
+        const resizeListener = () => {
+            setWidth(getWidth())
+        }
+        //set resize listener
+        window.addEventListener('resize',resizeListener);
+        //clean up
+        return () => {
+            window.removeEventListener('resize', resizeListener);
         }
     }, []);
 
     return(
-        <section className='about' id='About'>
-            <h2>
-                About
-            </h2>
+        <section id='About'>
+            <h2>About</h2>
             <div>
-                {isLargeScreen && (
-                    <div className='portrait' aria-hidden='true'>
-                        <div className='shape'></div>
+                {width > 1023 && (
+                    <div className={portrait} aria-hidden='true'>
+                        <div className={shape}></div>
                     </div>
                 )}
                 
-                <div className='description'>
+                <div className={description}>
                     <p>
-                        Blah blah blah, I need to figure out my short elevator pitch to put here. Yadda yadaa, in short, please hire me, I would like money. 
+                        Blah blah blah, I need to figure out my 
+                        short elevator pitch to put here. Yadda yadaa, 
+                        in short, please hire me, I would like money. 
                     </p>
                     <SkillTags />
                     <InternalButton destination='/works' content='See My Work' /> 
