@@ -31,7 +31,7 @@ const About = () => {
                         Blah blah blah, I need to figure out my short elevator pitch to put here. Yadda yadaa, in short, please hire me, I would like money. 
                     </p>
                     <SkillTags />
-                    <InternalButton destination='/work' content='See My Work' /> 
+                    <InternalButton destination='/works' content='See My Work' /> 
                 </div>
             </div>    
         </section>
