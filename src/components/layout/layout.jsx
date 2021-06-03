@@ -1,8 +1,11 @@
 import * as React from 'react';
-import Footer from '../../containers/footer/footer';
-import Nav from '../../containers/nav/nav';
+
+import '../../styles/normalize.css';
 import { layout } from './layout.module.css';
+
 import { Helmet } from 'react-helmet';
+import Nav from '../../containers/nav/nav';
+import Footer from '../../containers/footer/footer';
 
 const Layout = ({children, pageTitle}) => {
     return(
