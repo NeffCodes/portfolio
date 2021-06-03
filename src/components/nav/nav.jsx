@@ -1,25 +1,34 @@
-import React, {useState, useEffect} from 'react';
-import {NavItem} from './navItem';
+import React, { useState, useEffect } from 'react';
+import { NavItem } from './navItem';
+import './nav.module.css';
+
+const getWidth = () => window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
 
 const Nav = () => {
-
-    const [isLargeScreen, setIsLargeScreen] = useState(false);
-
+    const [width, setWidth] = useState(getWidth());
+    
+    //useEffect courtesy of Vitalie Maldur from dev.to
     useEffect(() => {
-        if (window.innerWidth < 768) {
-            setIsLargeScreen(false);
-        } else {
-            setIsLargeScreen(true);
+        const resizeListener = () => {
+            setWidth(getWidth())
+        }
+        //set resize listener
+        window.addEventListener('resize',resizeListener);
+        //clean up
+        return () => {
+            window.removeEventListener('resize', resizeListener);
         }
     }, []);
 
     return (
         <nav role='navigation'>
             <ul>
-                {isLargeScreen && (<li>JNeff</li>)}
-                <NavItem destination='#About' title='About' icon='far fa-user'/>
-                <NavItem destination='#' title='Works' icon='fas fa-desktop'/>
-                <NavItem destination='#Contact' title='Contact' icon='far fa-paper-plane'/>
+                {width > 1023 && (<li>JNeff</li>)}
+                <NavItem destination='/#About' title='About' icon='far fa-user'/>
+                <NavItem destination='/works' title='Works' icon='fas fa-desktop'/>
+                <NavItem destination='/#Contact' title='Contact' icon='far fa-paper-plane'/>
             </ul>
         </nav>
     )
