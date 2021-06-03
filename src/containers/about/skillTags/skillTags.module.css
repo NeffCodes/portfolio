@@ -4,9 +4,9 @@
     display: flex;
     justify-content: space-around;
     align-self: center;
-    
+    flex-wrap: wrap;
+
     width: 100%;
     margin-top: 2.4rem;
     max-width: 720px;
-    
 }
