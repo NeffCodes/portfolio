@@ -1,4 +1,5 @@
 import React from 'react';
+import { socialicons } from './footer.module.css'
 
 export const SocialIcons = () => {
     
@@ -9,7 +10,7 @@ export const SocialIcons = () => {
     ];
 
     return (
-        <div className='social-icons'>
+        <div className={socialicons}>
         {
             socials.map( (social) => {
                 return(
