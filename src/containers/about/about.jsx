@@ -34,7 +34,7 @@ const About = () => {
                     <p>
                         Blah blah blah, I need to figure out my 
                         short elevator pitch to put here. Yadda yadaa, 
-                        in short, please hire me, I would like money. 
+                        in short, please hire me... 
                     </p>
                     <SkillTags />
                     <InternalButton destination='/works' content='See My Work' /> 
