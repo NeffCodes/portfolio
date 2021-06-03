@@ -1,14 +1,8 @@
 import React from 'react';
 import { socialicons } from './footer.module.css'
+import { socials } from '../../components/context';
 
 export const SocialIcons = () => {
-    
-    const socials = [
-        {name: 'CodePen', icon: 'codepen', destination: 'https://codepen.io/Persigio'},
-        {name: 'GitHub', icon:'github', destination: 'https://github.com/persigio'},
-        {hame: 'LinkedIn', icon: 'linkedin', destination: 'https://www.linkedin.com/in/james-m-neff/'}
-    ];
-
     return (
         <div className={socialicons}>
         {
