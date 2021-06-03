@@ -16,7 +16,7 @@ const Nav = () => {
     return (
         <nav role='navigation'>
             <ul>
-                {isLargeScreen && (<NavItem destination='#' title='JNeff'/>)}
+                {isLargeScreen && (<li>JNeff</li>)}
                 <NavItem destination='#About' title='About' icon='far fa-user'/>
                 <NavItem destination='#' title='Works' icon='fas fa-desktop'/>
                 <NavItem destination='#Contact' title='Contact' icon='far fa-paper-plane'/>
