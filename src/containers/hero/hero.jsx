@@ -1,6 +1,6 @@
 import React from 'react';
-import {InternalButton} from '../button/internalButton/internalButton';
-import {hero} from './hero.module.css';
+import { InternalButton } from '../../components/button/internalButton/internalButton';
+import { hero } from './hero.module.css';
 
 const Hero = () => {
     return(

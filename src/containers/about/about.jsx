@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { InternalButton } from '../button/internalButton/internalButton';
+import { InternalButton } from '../../components/button/internalButton/internalButton';
 import {SkillTags} from './skillTags';
 
 const About = () => {

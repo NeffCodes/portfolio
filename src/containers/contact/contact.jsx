@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalButton } from '../button/externalButton/externalButton';
+import { ExternalButton } from '../../components/button/externalButton/externalButton';
 import { contact } from './contact.module.css';
 
 const Contact = () => {

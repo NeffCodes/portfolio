@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavItem } from './navItem';
 import './nav.module.css';
-
-const getWidth = () => window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
+import { getWidth } from '../../components/logic';
 
 const Nav = () => {
     const [width, setWidth] = useState(getWidth());
