@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from '../button/button';
+import {InternalButton} from '../button/internalButton/internalButton';
 import {hero} from './hero.module.css';
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
                 <br/>
                 a real person
             </h1>
-            <Button classes='btn primary' content='Check Me Out' destination='#About'/>
+            <InternalButton content='Check Me Out' destination='/#About'/>
         </section>
     )
 }

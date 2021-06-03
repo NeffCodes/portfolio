@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Button} from '../button/button';
+import { InternalButton } from '../button/internalButton/internalButton';
 import {SkillTags} from './skillTags';
 
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(false);
 
     useEffect(() => {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1024) {
             setIsLargeScreen(false);
         } else {
             setIsLargeScreen(true);
@@ -31,7 +31,7 @@ const About = () => {
                         Blah blah blah, I need to figure out my short elevator pitch to put here. Yadda yadaa, in short, please hire me, I would like money. 
                     </p>
                     <SkillTags />
-                    <Button classes='btn primary' content='See My Work' /> 
+                    <InternalButton destination='/work' content='See My Work' /> 
                 </div>
             </div>    
         </section>
