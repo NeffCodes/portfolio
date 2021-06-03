@@ -1,19 +1,10 @@
 import React from 'react';
+import { skills } from '../../../components/context';
+import { icons } from './skillTags.module.css';
 
 export const SkillTags = () => {
-    
-    const skills = [
-        {name:'CSS', icon:'css3-alt'},
-        {name:'HTML5', icon:'html5'},
-        {name:'Javascript', icon:'js-square'},
-        {name:'React-Redux', icon:'react'},
-        {name:'git', icon:'git'},
-        {name:'Figma', icon:'figma'},
-        {name:'Node', icon:'node'}
-        ];
-
     return (
-        <div className='icons'>
+        <div className={icons}>
         {
             skills.map( (skill) => {
                 return(
@@ -24,7 +15,7 @@ export const SkillTags = () => {
                         title={skill.name}
                         aria-hidden='true'
                         />
-                        <span class='sr-only'>
+                        <span className='sr-only'>
                             {skill.name}
                         </span>
                     </>
