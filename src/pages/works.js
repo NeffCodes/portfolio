@@ -1,13 +1,15 @@
 import * as React from "react"
+import Layout from '../components/layout/layout';
 
-const Works = () => {
+const WorksPage = () => {
     return(
-        <main>
-            <title>My Works</title>
-            <h1>My works by me</h1>
-            <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-        </main>
+        <Layout pageTitle='Portfolio'>
+            <section>
+                <h1>Behold! My stuff</h1>
+                <p>Just kidding. Still currently WIP, nothing to show yet.</p>
+            </section>
+        </Layout>
     )
 }
 
-export default Works
+export default WorksPage
