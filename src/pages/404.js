@@ -9,7 +9,7 @@ const NotFoundPage = () => {
         <h1>Took a wrong turn</h1>
         <p>Uh-oh...</p>
         <p>Looks like you got a little lost</p>
-        <InternalButton destination='/index' content='Send Me back'/>
+        <InternalButton destination='/' content='Send Me back'/>
       </section>
     </Layout>
   )
