@@ -1,5 +1,5 @@
 .icons{
-    color: var(--secondary-dark);
+    color: var(--dark-color-tint);
     
     display: flex;
     justify-content: space-around;

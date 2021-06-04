@@ -1,6 +1,6 @@
 nav {
     position: fixed;
-    background-color: var(--primary-dark);
+    background-color: var(--dark-color);
     width: 100vw;
     z-index: 999;
     bottom: 0;
@@ -19,12 +19,12 @@ li {
     font-size: 1.8em;
     flex-grow:1;
     font-weight: 700;
-    color: var(--secondary-dark);
+    color: var(--dark-color-tint);
 }
 
 a {
     text-decoration: none;
-    color: var(--secondary-dark);
+    color: var(--dark-color-tint);
     padding: 0.8em;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ a {
 a:hover, 
 a:active {
     background-color: var(--primary-color);
-    color: var(--primary-light);
+    color: var(--light-color);
 }
 
 /* Horizontal Ipad & up */

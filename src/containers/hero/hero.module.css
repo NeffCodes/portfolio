@@ -1,4 +1,4 @@
 .hero {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
