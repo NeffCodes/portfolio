@@ -1,5 +1,6 @@
 import React from 'react';
-import {btn,primary} from './button.module.css';
+import { btn } from './button.module.css';
+import { primary } from './primaryButton.module.css';
 
 export const ExternalButton = ({destination, content}) => {
     return (

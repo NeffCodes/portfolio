@@ -1,5 +1,6 @@
 import React from 'react';
-import {btn, secondary} from './button.module.css';
+import { btn } from './button.module.css';
+import { secondary } from './secondaryButton.module.css';
 import * as Icons from './icon.module.css';
 
 export const ExternalSecondaryButton = ({destination, content, icon}) => {

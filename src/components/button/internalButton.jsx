@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { btn, primary } from './button.module.css';
+import { btn } from './button.module.css';
+import { primary } from './primaryButton.module.css';
 
 export const InternalButton = ({destination, content}) => {
     return (
