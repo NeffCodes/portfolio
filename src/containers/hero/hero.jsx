@@ -1,5 +1,5 @@
 import React from 'react';
-import { InternalButton } from '../../components/button/internalButton/internalButton';
+import { InternalButton } from '../../components/button/internalButton';
 import { hero } from './hero.module.css';
 
 const Hero = () => {

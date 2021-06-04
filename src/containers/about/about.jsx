@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { InternalButton } from '../../components/button/internalButton/internalButton';
+import { InternalButton } from '../../components/button/internalButton';
 import { SkillTags } from './skillTags/skillTags';
 import { getWidth } from '../../components/logic';
 import { description, portrait, shape } from './about.module.css';
