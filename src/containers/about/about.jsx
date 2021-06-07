@@ -40,7 +40,7 @@ const About = () => {
                     <SkillTags />
                     <div>
                         <InternalButton destination='/works' content='See My Work' /> 
-                        <ExternalSecondaryButton destination='' content='Resume'/>
+                        <ExternalSecondaryButton destination='' content='Resume' icon='download'/>
                     </div> 
                 </div>
             </div>    
