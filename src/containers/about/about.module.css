@@ -15,7 +15,6 @@ p {
     }
     div{
         display: flex;
-        width: 100%;
     }
     .description{
         align-items: flex-start;
@@ -27,7 +26,7 @@ p {
         height: 25vw;
         width: 25vw;
         max-width: 400px;
-        clip-path: margin-box polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0);
+        clip-path: polygon(5% 25%, 5% 75%, 50% 100%, 95% 75%, 95% 25%, 50% 0);
         background: conic-gradient(#e6a522 118.75deg, #e67422 118.75deg 180deg, #e68422 180deg 241.25deg, #e69522 241.25deg);
         position: relative;
     }
