@@ -1,12 +1,19 @@
 .secondary{
-    border-left: 4px solid var(--primary-color);
     margin-left: 1rem;
     padding-left: 1rem;
 }
+.secondary::after{
+    content:'';
+    opacity: 1;
+    margin-left: 1rem;
+}
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1025px){
     .secondary{
         transition: all cubic-bezier(0.04, 0.52, 0.22, 1) 0.6s;
+        margin-left: 3rem;
+        align-self: center;
+        border-left: 4px solid var(--primary-color);
     }
     .secondary::before{
         content: '';
@@ -22,15 +29,14 @@
     }
     .secondary::after{
         content:'';
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
         opacity: 0;
         transition: all cubic-bezier(0.04, 0.52, 0.22, 1) 0.6s;
     }
     .secondary:hover, .secondary:focus{
         background-color: transparent;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        transform: translateX(2rem)
+        /* padding-left: 2rem;
+        padding-right: 2rem; */
     }
     .secondary:hover::before, .secondary:focus::before {
         width: 100%;
