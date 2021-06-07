@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { InternalButton } from '../../components/button/internalButton';
+import { ExternalSecondaryButton } from  '../../components/button/externalSecondaryButton';
 import { SkillTags } from './skillTags/skillTags';
 import { getWidth } from '../../components/logic';
 import { description, portrait, shape } from './about.module.css';
@@ -37,7 +38,10 @@ const About = () => {
                         in short, please hire me... 
                     </p>
                     <SkillTags />
-                    <InternalButton destination='/works' content='See My Work' /> 
+                    <div>
+                        <InternalButton destination='/works' content='See My Work' /> 
+                        <ExternalSecondaryButton destination='' content='Resume'/>
+                    </div> 
                 </div>
             </div>    
         </section>
