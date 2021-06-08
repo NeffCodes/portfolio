@@ -11,20 +11,20 @@ export default function MyFiles({ data }) {
         <table>
           <thead>
             <tr>
-              <th>relativePath</th>
+              <th>name</th>
+              <th>extension</th>
               <th>relativeDirectory</th>
               <th>prettySize</th>
-              <th>extension</th>
               <th>birthTime</th>
             </tr>
           </thead>
           <tbody>
             {data.allFile.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td>{node.relativePath}</td>
+                <td>{node.name}</td>
+                <td>{node.extension}</td>
                 <td>{node.relativeDirectory}</td>
                 <td>{node.prettySize}</td>
-                <td>{node.extension}</td>
                 <td>{node.birthTime}</td>
               </tr>
             ))}
@@ -40,7 +40,7 @@ export const query = graphql`
     allFile {
       edges {
         node {
-          relativePath
+          name
           relativeDirectory
           prettySize
           extension
