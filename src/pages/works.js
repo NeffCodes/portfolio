@@ -3,39 +3,46 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout/layout';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
+import '../styles/works.css';
+
 export default function WorksPage({ data }) {
     // console.log(data);
-    const projectCount = data.allMarkdownRemark.totalCount;
-
+    // const projectCount = data.allMarkdownRemark.totalCount;
+    const imageData = data.markdownRemark.frontmatter;
     return(
         <Layout pageTitle='Portfolio'>
-            <section>
-                <h1>Behold! My stuff</h1>
-
-                <h4>{ projectCount } Project{ projectCount !== 1 ? 's':null }</h4>
+            <section className="portfolio">
+                {/* <h1>Behold! My stuff</h1> */}
+                {/* <h4>{ projectCount } Project{ projectCount !== 1 ? 's':null }</h4> */}
+                <ul>
                 { data.allMarkdownRemark.edges.map( ({node}) => {
                     return(
-                        <div key={ node.id }>
+                        <li key={ node.id } className='projectTile'>
                           <Link to={ node.fields.slug }>
-                            <h3>{ node.frontmatter.title }</h3>
-                            { node.frontmatter.tags.map( tag => {
-                                return(
-                                    <h4 key={`${node.id}-${tag}`}>{tag}</h4>
-                                )
-                            })}
-                            <p>{ node.frontmatter.description }</p>
-                            <GatsbyImage image={data.markdownRemark.frontmatter.featuredImage.childImageSharp.gatsbyImageData}/>
+                            <article>
+                              <h1>{ node.frontmatter.title }</h1>
+                              <div className='tags'>
+                                { node.frontmatter.tags.map( tag => {
+                                    return(
+                                        <h3 key={`${node.id}-${tag}`}>{tag}</h3>
+                                    )
+                                })}
+                              </div>
+                              <p>{ node.frontmatter.description }</p>
+                              <GatsbyImage image={imageData.featuredImage.childImageSharp.gatsbyImageData} alt={imageData.imageAlt} imgClassName='test'/>
+                            </article>
                           </Link>
-                        </div>
+                        </li>
                     )
                 })}
+                </ul>
             </section>
         </Layout>
     )
 }
 
 export const query = graphql`
-query works {
+  query works {
     allMarkdownRemark {
       totalCount
       edges {
@@ -54,13 +61,17 @@ query works {
     }
     markdownRemark {
       frontmatter {
+        imageAlt
         featuredImage {
           childImageSharp {
-            gatsbyImageData(layout: FIXED)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              aspectRatio: 2
+            )
           }
         }
       }
     }
-  }
-  
+  }  
 `
