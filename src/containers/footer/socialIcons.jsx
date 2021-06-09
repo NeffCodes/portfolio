@@ -9,7 +9,7 @@ export const SocialIcons = () => {
             socials.map( (social) => {
                 return(
                     <a
-                        key={social.name}
+                        key={social.key}
                         href={social.destination}
                         rel='noopener noreferrer'
                         target='_blank'

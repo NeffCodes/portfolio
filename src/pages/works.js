@@ -11,7 +11,6 @@ export default function WorksPage({ data }) {
         <Layout pageTitle='Portfolio'>
             <section>
                 <h1>Behold! My stuff</h1>
-                {/* <p>Just kidding. Still currently WIP, nothing to show yet.</p> */}
 
                 <h4>{ projectCount } Project{ projectCount !== 1 ? 's':null }</h4>
                 { data.allMarkdownRemark.edges.map( ({node}) => {
@@ -20,7 +19,7 @@ export default function WorksPage({ data }) {
                             <h3>{ node.frontmatter.title }</h3>
                             { node.frontmatter.tags.map( tag => {
                                 return(
-                                    <h4>{tag}</h4>
+                                    <h4 key={`${node.id}-${tag}`}>{tag}</h4>
                                 )
                             })}
                             <p>{ node.frontmatter.description }</p>
@@ -39,6 +38,7 @@ query works {
       totalCount
       edges {
         node {
+          id
           frontmatter {
             title
             tags
