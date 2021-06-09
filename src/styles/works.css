@@ -1,0 +1,37 @@
+.portfolio{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.portfolio ul{
+    flex-direction: column;
+}
+.test{
+    width: 600;
+    height: 400;
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+p{ 
+    font-weight: 500;
+}
+.projectTile{
+    border-bottom: 0.2rem solid var(--dark-color-tint);
+}
+.projectTile h1, 
+.projectTile p{
+    color: var(--light-color);
+    text-align: left;
+}
+
+.tags {
+    display: flex; 
+}
+
+.tags h3 + h3:before{
+    padding: 1rem;
+    content:'|';
+}
