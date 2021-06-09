@@ -14,6 +14,7 @@ export default function MyFiles({ data }) {
               <th>name</th>
               <th>extension</th>
               <th>relativeDirectory</th>
+              <th>relativePath</th>
               <th>prettySize</th>
               <th>birthTime</th>
             </tr>
@@ -24,6 +25,7 @@ export default function MyFiles({ data }) {
                 <td>{node.name}</td>
                 <td>{node.extension}</td>
                 <td>{node.relativeDirectory}</td>
+                <td>{node.relativePath}</td>
                 <td>{node.prettySize}</td>
                 <td>{node.birthTime}</td>
               </tr>
@@ -42,6 +44,7 @@ export const query = graphql`
         node {
           name
           relativeDirectory
+          relativePath
           prettySize
           extension
           birthTime(fromNow: true)
