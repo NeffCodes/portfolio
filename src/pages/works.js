@@ -1,10 +1,10 @@
 import * as React from "react"
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout/layout';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 export default function WorksPage({ data }) {
-    console.log(data);
+    // console.log(data);
     const projectCount = data.allMarkdownRemark.totalCount;
 
     return(
@@ -16,6 +16,7 @@ export default function WorksPage({ data }) {
                 { data.allMarkdownRemark.edges.map( ({node}) => {
                     return(
                         <div key={ node.id }>
+                          <Link to={ node.fields.slug }>
                             <h3>{ node.frontmatter.title }</h3>
                             { node.frontmatter.tags.map( tag => {
                                 return(
@@ -24,6 +25,7 @@ export default function WorksPage({ data }) {
                             })}
                             <p>{ node.frontmatter.description }</p>
                             <GatsbyImage image={data.markdownRemark.frontmatter.featuredImage.childImageSharp.gatsbyImageData}/>
+                          </Link>
                         </div>
                     )
                 })}
@@ -43,6 +45,9 @@ query works {
             title
             tags
             description
+          }
+          fields {
+            slug
           }
         }
       }
