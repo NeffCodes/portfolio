@@ -1,11 +1,11 @@
 export const skills = [
-    {name:'CSS', icon:'css3-alt'},
-    {name:'HTML5', icon:'html5'},
-    {name:'Javascript', icon:'js-square'},
-    {name:'React-Redux', icon:'react'},
-    {name:'git', icon:'git'},
-    {name:'Figma', icon:'figma'},
-    {name:'Node', icon:'node'}
+    {name:'CSS', icon:'css3-alt', key:'skill-css'},
+    {name:'HTML5', icon:'html5', key:'skill-html'},
+    {name:'Javascript', icon:'js-square', key:'skill-javascript'},
+    {name:'React-Redux', icon:'react', key:'skill-react'},
+    {name:'git', icon:'git', key:'skill-git'},
+    {name:'Figma', icon:'figma', key:'skill-figma'},
+    {name:'Node', icon:'node', key:'skill-node'}
     ];
 
 export const socials = [

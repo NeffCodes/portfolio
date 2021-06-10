@@ -8,7 +8,7 @@ export const SkillTags = () => {
         {
             skills.map( (skill) => {
                 return(
-                    <div key={`skill-${skill.name}`} >
+                    <div key={ skill.key } >
                         <i 
                         className={`fab fa-${skill.icon} fa-3x`} 
                         title={skill.name}
