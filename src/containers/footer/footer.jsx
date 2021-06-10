@@ -8,7 +8,7 @@ const Footer = () => {
             <SocialIcons />
             <hr />
             <p>
-                Copyright &#169; {new Date().getFullYear()} - James Neff
+                Copyright &#169; {new Date().getFullYear()} - James Neff - Created in Gatsby
             </p>
         </footer>
     )
