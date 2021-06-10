@@ -28,14 +28,14 @@ hr {
 .socialicons > a {
     margin: 0 1.8rem 0.5rem;
     color: var(--dark-color-tint);
-    transition: .2s ease-out;
+    transition: .2s ease-in-out;
 }
 
 .socialicons > a:hover, 
 .socialicons > a:focus {
     color: var(--primary-color-tint);
     background-color: var(--dark-color);
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 @media screen and (min-width:1024px) {
