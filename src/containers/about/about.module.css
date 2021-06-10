@@ -3,6 +3,10 @@ p {
     color: var(--dark-color);
 }
 
+.about{
+    display: flex;
+}
+
 .description {
     display: flex;
     flex-direction: column;
@@ -12,9 +16,6 @@ p {
 @media screen and (min-width: 1024px){
     p{
         text-align: left;
-    }
-    div{
-        display: flex;
     }
     .description{
         align-items: flex-start;
