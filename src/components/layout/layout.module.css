@@ -29,12 +29,17 @@ h1, h2{
 
 p {
     font-size: 1.6rem;
-    line-height: 1.75;
-    margin:0;
+    line-height: 1.4;
+    margin: 2rem 0 0;
 }
 
-p:first-of-type{ 
-    margin-top: 1rem;
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 section {
@@ -50,7 +55,6 @@ section {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 100vw;
 }
 @media screen and (min-width:768px) {
     h1, h2{
