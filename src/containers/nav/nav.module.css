@@ -6,33 +6,34 @@ nav {
     bottom: 0;
 }
 
-ul {
+nav ul {
     display: flex;
     flex-wrap: nowrap;
-    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 
-li {
-    font-size: 1.8em;
+nav li {
+    font-size: 1.8rem;
     flex-grow:1;
     font-weight: 700;
     color: var(--dark-color-tint);
 }
 
-a {
-    text-decoration: none;
+nav a {
     color: var(--dark-color-tint);
-    padding: 0.8em;
+    padding: 2rem 0.8rem 1rem;
     display: flex;
     flex-direction: column;
+    
 }
-a:hover, 
-a:active {
+nav a:hover, 
+nav a:active {
     background-color: var(--primary-color);
     color: var(--light-color);
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
 }
 
 /* Horizontal Ipad & up */
@@ -42,23 +43,19 @@ a:active {
         bottom: auto;
     }
     
-    ul{
+    nav ul{
         justify-content: flex-end;
         align-items: center;
-        padding: 0 6.4em
+        padding: 0 6.4rem
     }
 
-    li{
+    nav li{
         max-width: 14vw;
     }
 
-    li:first-of-type{
+    nav li:first-of-type{
         position: absolute;
         left: 6.4rem;
-        font-size: 2em;
-    }
-    
-    a{
-        padding-top: 1em;
+        font-size: 2rem;
     }
 }
