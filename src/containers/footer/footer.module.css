@@ -27,6 +27,8 @@ hr {
 }
 .socialicons > a {
     margin: 0 1.8rem 0.5rem;
+    color: var(--dark-color-tint);
+    transition: .2s ease-out;
 }
 
 .socialicons > a:hover, 
