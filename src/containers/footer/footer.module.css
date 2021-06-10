@@ -35,6 +35,7 @@ hr {
 .socialicons > a:focus {
     color: var(--primary-color-tint);
     background-color: var(--dark-color);
+    transform: scale(1.4);
 }
 
 @media screen and (min-width:1024px) {
