@@ -3,7 +3,7 @@ import { InternalButton } from '../../components/button/internalButton';
 import { ExternalSecondaryButton } from  '../../components/button/externalSecondaryButton';
 import { SkillTags } from './skillTags/skillTags';
 import { getWidth } from '../../components/logic';
-import { description, portrait, shape } from './about.module.css';
+import { description, portrait, shape, about } from './about.module.css';
 
 const About = () => {
     const [width, setWidth] = useState(getWidth());
@@ -24,7 +24,7 @@ const About = () => {
     return(
         <section id='About'>
             <h2>About</h2>
-            <div>
+            <div className={ about }>
                 {width > 1023 && (
                     <div className={portrait} aria-hidden='true'>
                         <div className={shape}></div>
