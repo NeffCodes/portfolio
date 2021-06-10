@@ -20,16 +20,18 @@ export default function WorksPage({ data }) {
                         <li key={ node.id } className='projectTile'>
                           <Link to={ node.fields.slug }>
                             <article>
-                              <h1>{ node.frontmatter.title }</h1>
-                              <div className='tags'>
-                                { node.frontmatter.tags.map( tag => {
-                                    return(
-                                        <h3 key={`${node.id}-${tag}`}>{tag}</h3>
-                                    )
-                                })}
+                              <div>
+                                <h1>{ node.frontmatter.title }</h1>
+                                <div className='tags'>
+                                  { node.frontmatter.tags.map( tag => {
+                                      return(
+                                          <h3 key={`${node.id}-${tag}`}>{tag}</h3>
+                                      )
+                                  })}
+                                </div>
+                                <p>{ node.frontmatter.description }</p>
                               </div>
-                              <p>{ node.frontmatter.description }</p>
-                              <GatsbyImage image={imageData.featuredImage.childImageSharp.gatsbyImageData} alt={imageData.imageAlt} imgClassName='test'/>
+                              <GatsbyImage image={imageData.featuredImage.childImageSharp.gatsbyImageData} alt={imageData.imageAlt}/>
                             </article>
                           </Link>
                         </li>
