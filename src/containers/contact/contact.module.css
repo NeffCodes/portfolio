@@ -8,3 +8,7 @@
 .contact p {
     color: var(--light-color);
 }
+
+.contact p + p{
+    margin:0;
+}
