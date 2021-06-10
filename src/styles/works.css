@@ -1,14 +1,13 @@
 .portfolio{
+    padding-top: 13rem;
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 .portfolio ul{
     flex-direction: column;
 }
-.test{
-    width: 600;
-    height: 400;
-}
+
+
 h3{
     font-size: 1.5rem;
     color: var(--primary-color);
@@ -18,9 +17,23 @@ h3{
 p{ 
     font-weight: 500;
 }
+
 .projectTile{
     border-bottom: 0.2rem solid var(--dark-color-tint);
 }
+
+.projectTile:hover, .projectTile:focus{
+    background-color: var(--dark-color-tint);
+    transform: scale(1.01);
+    padding: 2rem;
+}
+
+.projectTile article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
 .projectTile h1, 
 .projectTile p{
     color: var(--light-color);
@@ -34,4 +47,20 @@ p{
 .tags h3 + h3:before{
     padding: 1rem;
     content:'|';
+}
+@media screen and (min-width: 768px){
+    .projectTile{
+        transition: all 0.3s ease-out .1s;
+    }
+    .projectTile:hover, .projectTile:focus {
+        transition: all 0.3s ease-out .1s;
+    }
+}
+@media screen and (min-width: 1024px){
+    .projectTile article{
+        flex-direction: row;
+    }
+    .projectTile div ~ div {
+        margin-left: 2rem;
+    }
 }
