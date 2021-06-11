@@ -11,6 +11,8 @@
 .secondary:hover, .secondary:focus{
     color: var(--light-color);
     background-color: var(--primary-color);
+    transition: all cubic-bezier(0.04, 0.52, 0.22, 1) 0.25s;
+
 }
 
 @media screen and (min-width:1025px){
