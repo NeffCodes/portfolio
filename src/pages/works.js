@@ -6,32 +6,30 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import '../styles/works.css';
 
 export default function WorksPage({ data }) {
-    // console.log(data);
-    // const projectCount = data.allMarkdownRemark.totalCount;
-    const imageData = data.markdownRemark.frontmatter;
+    const page = data.allMarkdownRemark;
+    
     return(
         <Layout pageTitle='Portfolio'>
             <section className="portfolio">
-                {/* <h1>Behold! My stuff</h1> */}
-                {/* <h4>{ projectCount } Project{ projectCount !== 1 ? 's':null }</h4> */}
                 <ul>
-                { data.allMarkdownRemark.edges.map( ({node}) => {
+                { page.edges.map( ({node}) => {
+                    const front = node.frontmatter;
                     return(
                         <li key={ node.id } className='projectTile'>
                           <Link to={ node.fields.slug }>
                             <article>
                               <div>
-                                <h1>{ node.frontmatter.title }</h1>
+                                <h1>{ front.title }</h1>
                                 <div className='tags'>
-                                  { node.frontmatter.tags.map( tag => {
+                                  { front.tags.map( tag => {
                                       return(
                                           <h3 key={`${node.id}-${tag}`}>{tag}</h3>
                                       )
                                   })}
                                 </div>
-                                <p>{ node.frontmatter.description }</p>
+                                <p>{ front.description }</p>
                               </div>
-                              <GatsbyImage image={imageData.featuredImage.childImageSharp.gatsbyImageData} alt={imageData.imageAlt}/>
+                              <GatsbyImage image={front.featuredImage.childImageSharp.gatsbyImageData} alt={front.imageAlt}/>
                             </article>
                           </Link>
                         </li>
@@ -44,36 +42,26 @@ export default function WorksPage({ data }) {
 }
 
 export const query = graphql`
-  query works {
-    allMarkdownRemark {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            tags
-            description
-          }
-          fields {
-            slug
+query works {
+  allMarkdownRemark {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          imageAlt
+          description
+          tags
+          title
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, aspectRatio: 2)
+            }
           }
         }
       }
     }
-    markdownRemark {
-      frontmatter {
-        imageAlt
-        featuredImage {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              placeholder: BLURRED
-              aspectRatio: 2
-            )
-          }
-        }
-      }
-    }
-  }  
+  }
+}
 `
