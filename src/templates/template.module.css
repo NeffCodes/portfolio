@@ -1,0 +1,15 @@
+.project {
+    margin: 7rem 0;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.project .tags{
+    align-items: flex-start;
+}
+@media screen and (min-width: 1024px) {
+    .project{
+        margin-top: 23rem;
+    }
+    
+}

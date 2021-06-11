@@ -5,6 +5,7 @@ import { ExternalSecondaryButton } from '../components/button/externalSecondaryB
 import { ExternalButton } from '../components/button/externalButton';
 
 import Layout from '../components/layout/layout';
+import { project } from './template.module.css';
 
 export default function TestPost({ data }) {
   const post = data.markdownRemark;
