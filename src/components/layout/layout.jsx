@@ -15,7 +15,7 @@ const Layout = ({children, pageTitle}) => {
                 <title>JNeff: {pageTitle || 'Portfolio'}</title>
                 <html lang='en'/>
                 <meta name='description' content='JNeff Portfolio'/>
-                <script src="https://kit.fontawesome.com/05e397c018.js" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/05e397c018.js" crossOrigin="anonymous"></script>
             </Helmet>
             <Nav/>
             <main>
