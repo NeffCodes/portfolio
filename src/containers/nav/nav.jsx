@@ -12,10 +12,15 @@ const Nav = () => {
             setWidth(getWidth())
         }
         //set resize listener
-        window.addEventListener('resize',resizeListener);
+        if(typeof window !== 'undefined'){
+            window.addEventListener('resize',resizeListener);
+        }
+        
         //clean up
         return () => {
-            window.removeEventListener('resize', resizeListener);
+            if(typeof window !== 'undefined'){
+                window.removeEventListener('resize', resizeListener);
+            }
         }
     }, []);
 
