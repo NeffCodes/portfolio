@@ -1,8 +1,8 @@
 ---
 title: "Project 1 test"
 tags: ['Markdown','Testing']
-featuredImage: '../../images/335.jpg'
-imageAlt: 'two random poeple.'
+featuredImage: '../../images/icon.png'
+imageAlt: 'another gatsby icon.'
 description: "Random stuff for now. This is all a placeholder anyways... besides it's almost lunch time."
 ---
 
