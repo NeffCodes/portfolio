@@ -3,6 +3,7 @@ import { InternalButton } from '../../components/button/internalButton';
 import { ExternalSecondaryButton } from  '../../components/button/externalSecondaryButton';
 import { SkillTags } from './skillTags/skillTags';
 import { getWidth } from '../../components/logic';
+import { aboutDescription } from '../../components/context';
 import { description, portrait, shape, about } from './about.module.css';
 
 const About = () => {
@@ -33,9 +34,7 @@ const About = () => {
                 
                 <div className={description}>
                     <p>
-                        Blah blah blah, I need to figure out my 
-                        short elevator pitch to put here. Yadda yadaa, 
-                        in short, please hire me... 
+                        { aboutDescription }
                     </p>
                     <SkillTags />
                     <div>

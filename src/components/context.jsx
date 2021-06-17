@@ -1,3 +1,12 @@
+export const userName = 'James Neff';
+
+export const aboutDescription = `
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+Excepturi neque, ipsa animi maiores repellendu distinctioaperiam 
+earum dolor voluptatum consequatur blanditiis inventore debitis fuga
+numquam voluptate architecto itaque molestiae.
+`;
+
 export const skills = [
     {name:'CSS', icon:'css3-alt', key:'skill-css'},
     {name:'HTML5', icon:'html5', key:'skill-html'},
