@@ -12,7 +12,9 @@ export default function WorksPage({ data }) {
         <Layout pageTitle='Portfolio'>
             <section className="portfolio">
                 <ul>
-                { page.edges.map( ({node}) => {
+                { page.edges
+                  .filter( ({node}) => node.frontmatter.title !== 'Example')
+                  .map( ({node}) => {
                     const front = node.frontmatter;
                     return(
                         <li key={ node.id } className='projectTile'>
