@@ -6,7 +6,7 @@ import * as Icons from './icon.module.css';
 export const ExternalSecondaryButton = ({destination, content, icon}) => {
     const addIcon = icon ? Icons[icon] : null;
     return (
-        <a className={`${btn} ${secondary} ${addIcon}`} href={destination} role='button'>
+        <a className={`${btn} ${secondary} ${addIcon}`} href={destination} role='button' target='_blank' rel="noreferrer">
             {content}
         </a>
     )
