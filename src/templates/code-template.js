@@ -23,8 +23,8 @@ export default function TestPost({ data }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <div>
-          <ExternalButton destination='' content='See Live'/>
-          <ExternalSecondaryButton destination='' content='Source' icon='code'/>
+          {post.frontmatter.mainLink && <ExternalButton destination={post.frontmatter.mainLink} content='See Live'/>}
+          {post.frontmatter.sourceLink && <ExternalSecondaryButton destination={post.frontmatter.sourceLink} content='Source' icon='code'/>}
         </div>
 
       </section>
@@ -40,6 +40,8 @@ query($slug: String!) {
     frontmatter {
       title
       tags
+      mainLink
+      sourceLink
     }
   }
 }
