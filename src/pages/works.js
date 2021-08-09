@@ -43,9 +43,10 @@ export default function WorksPage({ data }) {
 
 export const query = graphql`
 query works {
-  allMarkdownRemark {
+  allMarkdownRemark (sort: {fields: frontmatter___date, order: ASC}) {
     edges {
       node {
+        id
         fields {
           slug
         }
@@ -56,7 +57,12 @@ query works {
           title
           featuredImage {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, aspectRatio: 2)
+              gatsbyImageData(
+                layout: CONSTRAINED
+                transformOptions: {fit: COVER}
+                placeholder: BLURRED
+                width: 512
+          )
             }
           }
         }

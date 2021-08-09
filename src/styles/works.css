@@ -59,6 +59,7 @@ p{
 @media screen and (min-width: 1024px){
     .projectTile article{
         flex-direction: row;
+        justify-content: space-between;
     }
     .projectTile div ~ div {
         margin-left: 2rem;
