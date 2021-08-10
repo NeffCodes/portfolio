@@ -39,7 +39,7 @@ const About = () => {
                     <SkillTags />
                     <div>
                         <InternalButton destination='/works' content='See My Work' /> 
-                        <ExternalSecondaryButton destination='' content='Resume' icon='download'/>
+                        <ExternalSecondaryButton destination='' content='Resume' icon='download' download='J.Neff Resume'/>
                     </div> 
                 </div>
             </div>    
