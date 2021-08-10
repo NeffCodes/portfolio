@@ -13,7 +13,7 @@ sourceLink: 'https://github.com/persigio/mini-reddit'
 
 This project is a portfolio piece through [Codecademy's](https://codecademy.com) Front-End Engineer course. The goal of the project was to design, develop, and document a website that displays minimal content provided by [Reddit's](https://www.reddit.com) API using React & Redux but does not allow for any contribution. The application allows users to view and search posts and comments provided by the API.  
 
-Project Requirements:
+### Project Requirements  
 
 + Build the application using React and Redux
 + Version control your application with Git and host the repository on GitHub

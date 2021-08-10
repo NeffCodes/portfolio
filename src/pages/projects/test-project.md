@@ -1,6 +1,6 @@
 ---
 title: "Example"
-date: '01/1990'
+date: '01-1990'
 tags: ['Markdown','Testing']
 featuredImage: '../../images/icon.png'
 imageAlt: 'another gatsby icon.'

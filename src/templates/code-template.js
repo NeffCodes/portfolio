@@ -5,7 +5,7 @@ import { ExternalSecondaryButton } from '../components/button/externalSecondaryB
 import { ExternalButton } from '../components/button/externalButton';
 
 import Layout from '../components/layout/layout';
-import { project } from './template.module.css';
+import { project, md} from './template.module.css';
 
 export default function TestPost({ data }) {
   const post = data.markdownRemark;
@@ -21,7 +21,7 @@ export default function TestPost({ data }) {
               )
           })}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} className={ md }/>
         <div>
           {post.frontmatter.mainLink && <ExternalButton destination={post.frontmatter.mainLink} content='See Live'/>}
           {post.frontmatter.sourceLink && <ExternalSecondaryButton destination={post.frontmatter.sourceLink} content='Source' icon='code'/>}

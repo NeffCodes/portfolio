@@ -31,7 +31,7 @@ export default function WorksPage({ data }) {
                                 </div>
                                 <p>{ front.description }</p>
                               </div>
-                              <GatsbyImage image={front.featuredImage.childImageSharp.gatsbyImageData} alt={front.imageAlt}/>
+                              {front.featuredImage && <GatsbyImage image={front.featuredImage.childImageSharp.gatsbyImageData} alt={front.imageAlt}/>}
                             </article>
                           </Link>
                         </li>
