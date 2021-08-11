@@ -1,10 +1,18 @@
 export const userName = 'James Neff';
 
-export const aboutDescription = `
-With over 9 years working across different areas of print & digital design, I am able to provide a creative insight to your next project. 
-These days, I have been spending my time researching, designing and coding, although you may catch me learning a new board game with friends. 
-Currently, I'm looking for the next challenge to apply my skills to, so if you're interested let me know!
-`;
+export const aboutDescription = {
+    first: `
+With over 9 years working across different areas of print & 
+digital design, I am able to provide a creative insight to your next 
+project. `,
+    second:`
+These days, I have been spending my time researching, designing and 
+coding, although you may catch me learning a new board game with 
+friends, trying out an escape room, or hiking on the trails. 
+Currently, I'm looking for the next challenge to apply my skills to, 
+so if you're interested let me know!
+`,
+};
 
 export const skills = [
     {name:'CSS', icon:'css3-alt', key:'skill-css'},

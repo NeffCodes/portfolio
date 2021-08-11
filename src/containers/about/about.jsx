@@ -34,7 +34,10 @@ const About = () => {
                 
                 <div className={description}>
                     <p>
-                        { aboutDescription }
+                        { aboutDescription.first }
+                    </p>
+                    <p>
+                        { aboutDescription.second }
                     </p>
                     <SkillTags />
                     <div>
