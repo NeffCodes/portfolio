@@ -2,3 +2,7 @@
     background-color: var(--dark-color);
     color: var(--light-color);
 }
+.hero-alt {
+    color: var(--primary-color);
+    display: inline-block;
+}
