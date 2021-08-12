@@ -1,6 +1,6 @@
 ---
 title: "Mini Reddit"
-date: '08-2021'
+date: '2021-08'
 tags: ['React', 'Redux', 'Figma', 'GitHub']
 featuredImage: '../../images/mini-reddit-logo.png'
 imageAlt: 'Mini-Reddit Logo.'
