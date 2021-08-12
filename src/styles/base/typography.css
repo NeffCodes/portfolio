@@ -24,7 +24,7 @@ a:hover, a:focus {
     transition: all 0.2s ease-out;
 }
 
-.social-icon {
+.social-icon, .skill-icon {
     font-size: var(--mobile-mid-font-size);
 }
 .footer-text {
@@ -41,6 +41,10 @@ a:hover, a:focus {
     font-weight: 700;
 }
 
+.description {
+    text-align: left;
+}
+
 @media screen and (min-width:768px) {
     h1, h2 {
         font-size: var(--ipad-big-font-size);
@@ -55,7 +59,7 @@ a:hover, a:focus {
     .btn, .nav-item {
         font-size: var(--ipad-default-font-size);
     }
-    .social-icon {
+    .social-icon, .skill-icon {
         font-size: var(--ipad-mid-font-size);
     }
 

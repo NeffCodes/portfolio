@@ -1,12 +1,22 @@
-.icons{
+.about{
+    display: flex;
+    color: var(--dark-color);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.skills {
     color: var(--dark-color-tint);
-    
     display: flex;
     justify-content: space-around;
     align-self: center;
     flex-wrap: wrap;
-
     width: 100%;
     margin-top: 2.4rem;
     max-width: 720px;
 }
+

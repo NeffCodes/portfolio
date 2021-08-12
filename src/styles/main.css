@@ -2,7 +2,10 @@
 
 @import './base/base';
 @import './base/typography';
+@import './layout/layout';
 @import './layout/nav';
 @import './layout/footer';
 
 @import './sections/hero';
+@import './sections/about.css';
+@import './sections/contact';
