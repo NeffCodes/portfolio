@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavItem } from './navItem';
-import useWindowSize from '../../utils/useWindowSize';
+import useWindowSize from '../../../utils/useWindowSize';
 
 const Nav = () => {
     const { width } = useWindowSize();

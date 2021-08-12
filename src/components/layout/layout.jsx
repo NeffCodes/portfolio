@@ -4,7 +4,7 @@ import '../../styles/normalize.css';
 import { layout } from './layout.module.css';
 
 import { Helmet } from 'react-helmet';
-import Nav from '../../containers/nav/nav';
+import Nav from './nav/nav';
 import Footer from './footer/footer';
 
 const Layout = ({children, pageTitle}) => {
