@@ -1,0 +1,22 @@
+:root{
+
+    /*____COLORS____*/
+    --dark-color-shade: #0c0e12;
+    --dark-color: #202731;
+    --dark-color-tint: #51637d;
+
+    --primary-color-gradient: #e69522;
+    --primary-color: #e6a522;
+    --primary-color-tint: #fde3a7;
+
+    --light-color: #f9f9f9;
+
+    /*____FONT SIZE____*/
+    --mobile-default-font-size: 1.6rem;
+    --mobile-big-font-size: 4rem;
+    --mobile-mid-font-size: 2.5rem;
+
+    --ipad-default-font-size: 2.5rem;
+    --ipad-big-font-size: 6.4rem;
+    --ipad-mid-font-size: 3.6rem;
+}
