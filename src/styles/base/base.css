@@ -11,9 +11,7 @@ body{
     text-align: center;
     margin:0;
 }
-main {
-    display: grid;
-}
+
 h1, h2{
     margin: 0;
 }
