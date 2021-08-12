@@ -1,6 +1,6 @@
 ---
 title: "Index-Journal Redesign"
-date: '11-2014'
+date: '2014-11'
 tags: ['Web Design', 'Collaboration']
 featuredImage: '../../images/Index-Journal.png'
 imageAlt: 'Screenshot of Index-Journal website.'
