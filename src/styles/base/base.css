@@ -31,16 +31,15 @@ ul {
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    padding: 0 2.4rem;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    padding: 2.4rem;
     min-height: 100vh;
 }
 
 @media screen and (min-width:768px) {
     section{
-        padding: 0 6.4rem;
+        padding: 6.4rem;
     }
 }
