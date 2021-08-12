@@ -5,6 +5,7 @@ import Hero from "../containers/hero/hero";
 import About from "../containers/about/about";
 import Contact from "../containers/contact/contact";
 
+import '../styles/main.css';
 
 const IndexPage = () => {
   return (
