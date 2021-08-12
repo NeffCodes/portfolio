@@ -15,9 +15,7 @@ nav ul {
 
 
 nav li {
-    font-size: 1.8rem;
     flex-grow:1;
-    font-weight: 700;
     color: var(--dark-color-tint);
 }
 
@@ -33,7 +31,6 @@ nav a:focus {
     background-color: var(--primary-color);
     color: var(--light-color);
     transform: scale(1.1);
-    transition: 0.2s ease-out;
 }
 
 /* Horizontal Ipad & up */
@@ -56,6 +53,5 @@ nav a:focus {
     nav li:first-of-type{
         position: absolute;
         left: 6.4rem;
-        font-size: 2rem;
     }
 }
