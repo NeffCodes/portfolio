@@ -24,8 +24,11 @@ a:hover, a:focus {
     transition: all 0.2s ease-out;
 }
 
-footer {
-    font-size: 1.2rem;
+.social-icon {
+    font-size: var(--mobile-mid-font-size);
+}
+.footer-text {
+    font-size: 1.4rem;
 }
 
 .btn, .nav-item {
@@ -51,6 +54,9 @@ footer {
     }
     .btn, .nav-item {
         font-size: var(--ipad-default-font-size);
+    }
+    .social-icon {
+        font-size: var(--ipad-mid-font-size);
     }
 
 }

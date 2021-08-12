@@ -5,7 +5,7 @@ import { layout } from './layout.module.css';
 
 import { Helmet } from 'react-helmet';
 import Nav from '../../containers/nav/nav';
-import Footer from '../../containers/footer/footer';
+import Footer from './footer/footer';
 
 const Layout = ({children, pageTitle}) => {
     return(
