@@ -6,8 +6,10 @@ h1, h2 {
     font-size: var(--mobile-big-font-size);
     font-weight: 700; 
 }
-
-h3, p, a, li {
+.subH2 {
+    font-size: var(--mobile-mid-font-size)
+}
+h3, p, a, li, .tag {
     font-size: var(--mobile-default-font-size);
     line-height: 1.75;
 }
@@ -49,6 +51,9 @@ a:hover, a:focus {
     h1, h2 {
         font-size: var(--ipad-big-font-size);
     }
+    .subH2 {
+        font-size: var(--ipad-mid-font-size)
+    }  
     .md h2 {
         font-size: var(--ipad-mid-font-size);
     }

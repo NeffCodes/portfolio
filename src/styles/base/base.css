@@ -12,7 +12,7 @@ body{
     margin:0;
 }
 
-h1, h2{
+h1, h2, h3{
     margin: 0;
 }
 
@@ -37,7 +37,12 @@ section {
 }
 
 @media screen and (min-width:768px) {
-    section{
+    section {
         padding: 6.4rem;
+        grid-template-columns: 1fr minmax(36rem,104rem) 1fr;
+        grid-template-areas: ". content .";
+    }
+    .content {
+        grid-area: content;
     }
 }

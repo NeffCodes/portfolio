@@ -8,17 +8,19 @@ import Footer from './footer/footer';
 
 const Layout = ({children, pageTitle}) => {
     return(
-        <div >
+        <div>
             <Helmet>
                 <meta charSet="utf-8"/>
                 <title>JNeff: {pageTitle || 'Portfolio'}</title>
                 <html lang='en'/>
-                <meta name='description' content='JNeff Portfolio'/>
+                <meta name='description' content='J Neff, designer and developer, welcome to my personal website.'/>
                 <script src="https://kit.fontawesome.com/05e397c018.js" crossOrigin="anonymous"></script>
             </Helmet>
             <Nav/>
-            <main className='layout'>
-                {children}
+            <main>
+                <div className='layout'>
+                    {children}
+                </div>
             </main>
             <Footer/>
         </div>

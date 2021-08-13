@@ -9,21 +9,22 @@ export default function TestPost({ data }) {
 
   return (
     <Layout pageTitle={post.frontmatter.title}>
-      <section className='project'>
-        <h1>{post.frontmatter.title}</h1>
-        <div className='tags'>
-          { post.frontmatter.tags.map( tag => {
-              return(
-                  <h3 key={`${post.id}-${tag}`}>{tag}</h3>
-              )
-          })}
+      <section className='project-page'>
+        <div className='content'>
+          <h1>{post.frontmatter.title}</h1>
+          <div className='tags'>
+            { post.frontmatter.tags.map( tag => {
+                return(
+                    <h3 key={`${post.id}-${tag}`} className='tag'>{tag}</h3>
+                )
+            })}
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} className='md'/>
+          <div>
+            {post.frontmatter.mainLink && <ExternalButton destination={post.frontmatter.mainLink} content='See Live'/>}
+            {post.frontmatter.sourceLink && <ExternalSecondaryButton destination={post.frontmatter.sourceLink} content='Source' icon='code'/>}
+          </div>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} className='md'/>
-        <div>
-          {post.frontmatter.mainLink && <ExternalButton destination={post.frontmatter.mainLink} content='See Live'/>}
-          {post.frontmatter.sourceLink && <ExternalSecondaryButton destination={post.frontmatter.sourceLink} content='Source' icon='code'/>}
-        </div>
-
       </section>
     </Layout>
   )
