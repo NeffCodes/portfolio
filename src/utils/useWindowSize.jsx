@@ -1,25 +1,16 @@
-//Referenced from Reed Barger
-//https://www.freecodecamp.org/news/make-react-apps-responsive/
-
-import React from 'react';
-
 export default function useWindowSize() {
-  const [windowSize, setWindowSize] = React.useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
-
-  function changeWindowSize() {
-    setWindowSize({ width: window.innerWidth, height: window.innerHeight });
+  if (typeof window !== 'undefined') {
+    return (
+      {
+        width: window.innerWidth,
+        height: window.innerHeight,
+      } || {
+        width: document.documentElement.clientWidth,
+        height: document.documentElement.clientHeight,
+      } || {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+      }
+    );
   }
-
-  React.useEffect(() => {
-    window.addEventListener('resize', changeWindowSize);
-
-    return () => {
-      window.removeEventListener('resize', changeWindowSize);
-    };
-  }, []);
-
-  return windowSize;
 }
