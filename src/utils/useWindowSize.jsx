@@ -1,4 +1,4 @@
-export default function useWindowSize() {
+export function useWindowSize() {
   if (typeof window !== 'undefined') {
     if(window.innerWidth){
       return {
