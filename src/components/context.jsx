@@ -1,4 +1,6 @@
 export const userName = 'James Neff';
+export const email = 'test@gmail.com';
+export const resume = '';
 
 export const aboutDescription = [
 `

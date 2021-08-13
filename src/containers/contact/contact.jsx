@@ -1,6 +1,6 @@
 import React from 'react';
 import { ExternalButton } from '../../components/button/Buttons';
-
+import { email } from '../../components/context';
 
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
                 <h2>Give a Shout</h2>
                 <p>Have a question or just want to chat?</p>
                 <p>Don't be shy, let me know! </p>
-                <ExternalButton content="Say Hello" destination='mailto:test@gmail.com'/>
+                <ExternalButton content="Say Hello" destination={`mailto:${ email }`}/>
             </div>
         </section>
     )

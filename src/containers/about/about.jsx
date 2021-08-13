@@ -1,8 +1,12 @@
 import React from 'react';
-
-import { aboutDescription, skills } from '../../components/context';
-
 import { InternalButton, ExternalSecondaryButton } from '../../components/button/Buttons';
+import { 
+    aboutDescription, 
+    resume,
+    skills,
+    userName 
+} from '../../components/context';
+
 
 const About = () => {
 
@@ -31,7 +35,7 @@ const About = () => {
                         </div>
                         <div>
                             <InternalButton destination='/works' content='See My Work' /> 
-                            <ExternalSecondaryButton destination='' content='Resume' icon='download' download='J.Neff Resume'/>
+                            <ExternalSecondaryButton destination={ resume } content='Resume' icon='download' download={`${userName} Resume`}/>
                         </div> 
                     </div>
                 </div>   
