@@ -7,7 +7,7 @@ const Hero = () => {
         <section className='hero'>
             <div className='content'>
                 <h1>
-                    Hello! I am <span className='hero-alt'>{ userName }</span>
+                    Hello! I'm <span className='hero-alt'>{ userName }</span>
                 </h1>
                 <h2 className='subH2'>
                     Web Developer &amp; Graphic Designer

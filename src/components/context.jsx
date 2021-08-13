@@ -4,16 +4,15 @@ export const resume = '';
 
 export const aboutDescription = [
 `
-With over 9 years working across different areas of print & 
-digital design, I am able to provide a creative insight to your next 
-project. 
+I've spent the past 9 years working across multiple areas 
+of print & digital design. I am able to provide a creative insight 
+to your next project, and I'm looking for the next challenge 
+to apply my skills to.
+ 
 `,`
 These days, I have been spending my time researching, designing and 
-coding, although you may catch me learning a new board game with 
-friends, trying out an escape room, or hiking on the trails. 
-`,`
-Currently, I'm looking for the next challenge to apply my skills to, 
-so if you're interested let me know!
+coding. You may also catch me learning a new board game with 
+friends, hiking, or trying out an escape room.
 `
 ];
 

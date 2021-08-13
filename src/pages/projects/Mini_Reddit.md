@@ -25,7 +25,7 @@ This project is a portfolio piece from [Codecademy's](https://codecademy.com) Fr
 
 ## Approach
 
-Like most of my projects, I started this project on pen and paper, writing out the sitemap and roughly sketching different layouts. Once I had a fairly good idea of how I wanted it to look, I transcribed the layout into Figma and started working on the scheme. Once I had the scheme roughly where I wanted it, and a good visual target of how I wanted the site to look, I started the actual coding, building each component and updating my store as I went.  
+Like most of my projects, I started this project out with pen and paper, writing out the sitemap and roughly sketching different layouts. Once I had a fairly good idea of how I wanted it to look, I transcribed the layout into Figma and started working on the scheme. Once I had the scheme roughly where I wanted it, and a good visual target of how I wanted the site to look, I started the actual coding, building each component and updating my store as I went.  
 
 After I built out the site to the specified requirements, I started to fiddle around to add in a couple features that I thought would be more useful, like seeing replies to the comments. Once I had the functionality in, I went back and adjusted the styling to make it look cleaner.  
 
