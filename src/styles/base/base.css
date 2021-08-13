@@ -1,0 +1,48 @@
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+    font-weight: 500; 
+    color: var(--dark-color);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin:0;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+p {
+
+    margin: 2rem 0 0;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    padding: 2.4rem;
+    min-height: 100vh;
+}
+
+@media screen and (min-width:768px) {
+    section {
+        padding: 6.4rem;
+        grid-template-columns: 1fr minmax(36rem,104rem) 1fr;
+        grid-template-areas: ". content .";
+    }
+    .content {
+        grid-area: content;
+    }
+}

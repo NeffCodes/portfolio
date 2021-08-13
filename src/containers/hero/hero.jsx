@@ -1,18 +1,22 @@
 import React from 'react';
-import { InternalButton } from '../../components/button/internalButton';
-import { hero } from './hero.module.css';
-
-import {userName} from '../../components/context';
+import { InternalButton } from '../../components/button/Buttons';
+import { userName } from '../../components/context';
 
 const Hero = () => {
     return(
-        <section className={hero}>
-            <h1>
-                Hello! I am <span style={{color: 'var(--primary-color)', display: 'inline-block'}}>{userName || 'Persigio'},</span>
-                <br/>
-                Web Developer & Graphic Designer
-            </h1>
-            <InternalButton content='Check Me Out' destination='/#About'/>
+        <section className='hero'>
+            <div className='content'>
+                <h1>
+                    Hello! I am <span className='hero-alt'>{ userName }</span>
+                </h1>
+                <h2 className='subH2'>
+                    Web Developer &amp; Graphic Designer
+                </h2>
+                <InternalButton 
+                  content='Check Me Out' 
+                  destination='/#About'
+                />
+            </div>
         </section>
     )
 }

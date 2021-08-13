@@ -1,51 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import { InternalButton } from '../../components/button/internalButton';
-import { ExternalSecondaryButton } from  '../../components/button/externalSecondaryButton';
-import { SkillTags } from './skillTags/skillTags';
-import { getWidth } from '../../components/logic';
-import { aboutDescription } from '../../components/context';
-import { description, portrait, shape, about } from './about.module.css';
+import React from 'react';
+import { InternalButton, ExternalSecondaryButton } from '../../components/button/Buttons';
+import { 
+    aboutDescription, 
+    resume,
+    skills,
+    userName 
+} from '../../components/context';
+
 
 const About = () => {
-    const [width, setWidth] = useState(getWidth());
-    
-    //useEffect courtesy of Vitalie Maldur from dev.to
-    useEffect(() => {
-        const resizeListener = () => {
-            setWidth(getWidth())
-        }
-        //set resize listener
-        window.addEventListener('resize',resizeListener);
-        //clean up
-        return () => {
-            window.removeEventListener('resize', resizeListener);
-        }
-    }, []);
 
     return(
         <section id='About'>
-            <h2>About</h2>
-            <div className={ about }>
-                {width > 1023 && (
-                    <div className={portrait} aria-hidden='true'>
-                        <div className={shape}></div>
+            <div className='content'>
+                <h2>About Me</h2>
+                <div className='about'>           
+                    <div className='description'>
+                        {aboutDescription.map( paragraph => <p>{paragraph}</p>)}
+                        <div className='skills'>
+                            {skills.map( (skill) => {
+                                return(
+                                    <div key={ skill.key } >
+                                        <i 
+                                        className={`fab fa-${skill.icon} skill-icon`} 
+                                        title={skill.name}
+                                        aria-hidden='true'
+                                        />
+                                        <span className='sr-only'>
+                                            {skill.name}
+                                        </span>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                        <div>
+                            <InternalButton destination='/works' content='See My Work' /> 
+                            <ExternalSecondaryButton destination={ resume } content='Resume' icon='download' download={`${userName} Resume`}/>
+                        </div> 
                     </div>
-                )}
-                
-                <div className={description}>
-                    <p>
-                        { aboutDescription.first }
-                    </p>
-                    <p>
-                        { aboutDescription.second }
-                    </p>
-                    <SkillTags />
-                    <div>
-                        <InternalButton destination='/works' content='See My Work' /> 
-                        <ExternalSecondaryButton destination='' content='Resume' icon='download' download='J.Neff Resume'/>
-                    </div> 
-                </div>
-            </div>    
+                </div>   
+            </div> 
         </section>
     )
 }

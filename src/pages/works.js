@@ -3,41 +3,47 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout/layout';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
-import '../styles/works.css';
-
 export default function WorksPage({ data }) {
     const page = data.allMarkdownRemark;
     
     return(
         <Layout pageTitle='Portfolio'>
             <section className="portfolio">
-                <ul>
-                { page.edges
+              <div className='content'>
+                <ul className='port-list'>
+                {page.edges
                   .filter( ({node}) => node.frontmatter.title !== 'Example')
                   .map( ({node}) => {
                     const front = node.frontmatter;
                     return(
-                        <li key={ node.id } className='projectTile'>
+                        <li key={ node.id } className='project-tile'>
                           <Link to={ node.fields.slug }>
-                            <article>
+                            <article className='project'>
                               <div>
-                                <h1>{ front.title }</h1>
+                                <h1 className='project-title'>{ front.title }</h1>
                                 <div className='tags'>
                                   { front.tags.map( tag => {
                                       return(
-                                          <h3 key={`${node.id}-${tag}`}>{tag}</h3>
+                                          <h3 key={`${node.id}-${tag}`} className='tag'>{tag}</h3>
                                       )
                                   })}
                                 </div>
-                                <p>{ front.description }</p>
+                                <p className='project-description'>{ front.description }</p>
                               </div>
-                              {front.featuredImage && <GatsbyImage image={front.featuredImage.childImageSharp.gatsbyImageData} alt={front.imageAlt}/>}
+                              {front.featuredImage && (
+                                <GatsbyImage 
+                                  image={front.featuredImage.childImageSharp.gatsbyImageData} 
+                                  alt={front.imageAlt} 
+                                  className='project-img'
+                                />
+                              )}
                             </article>
                           </Link>
                         </li>
                     )
                 })}
                 </ul>
+              </div>
             </section>
         </Layout>
     )
@@ -61,10 +67,10 @@ query works {
             childImageSharp {
               gatsbyImageData(
                 layout: CONSTRAINED
-                transformOptions: {fit: COVER}
+                transformOptions: {fit: CONTAIN, cropFocus: NORTH}
                 placeholder: BLURRED
-                width: 512
-          )
+                backgroundColor: "transparent"
+              )
             }
           }
         }

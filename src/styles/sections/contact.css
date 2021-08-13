@@ -1,7 +1,7 @@
 .contact {
     background-color: var(--dark-color);
-    height: calc(100vh - 198px);
-    min-height: calc(100vh - 198px);
+    height: calc(100vh - 246px);
+    min-height: calc(100vh - 246px);
 }
 
 .contact h2,
