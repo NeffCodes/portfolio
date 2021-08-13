@@ -36,8 +36,8 @@
 .social-icon:hover, 
 .social-icon:focus {
     color: var(--primary-color-tint);
-    background-color: var(--dark-color);
     transform: scale(1.2);
+    filter: drop-shadow(0 0 4px var(--dark-color-shade));
 }
 
 @media screen and (min-width:768px) {
