@@ -28,9 +28,15 @@ export default function WorksPage({ data }) {
                                       )
                                   })}
                                 </div>
-                                <p className='project-body'>{ front.description }</p>
+                                <p className='project-description'>{ front.description }</p>
                               </div>
-                              {front.featuredImage && <GatsbyImage image={front.featuredImage.childImageSharp.gatsbyImageData} alt={front.imageAlt}/>}
+                              {front.featuredImage && (
+                                <GatsbyImage 
+                                  image={front.featuredImage.childImageSharp.gatsbyImageData} 
+                                  alt={front.imageAlt} 
+                                  className='project-img'
+                                />
+                              )}
                             </article>
                           </Link>
                         </li>
@@ -61,9 +67,7 @@ query works {
             childImageSharp {
               gatsbyImageData(
                 layout: CONSTRAINED
-                transformOptions: {fit: CONTAIN}
-                width: 360
-                height: 360
+                transformOptions: {fit: CONTAIN, cropFocus: NORTH}
                 placeholder: BLURRED
                 backgroundColor: "transparent"
               )

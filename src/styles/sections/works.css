@@ -24,11 +24,22 @@
 }
 
 .project-title, 
-.project-body{
+.project-description{
     color: var(--light-color);
     text-align: left;
 }
 
+.project-title {
+    line-height: initial;
+}
+.project-description {
+    padding-bottom: 1rem;
+}
+
+.project-img {
+    width: auto;
+    height: 100%;
+}
 .tags {
     display: flex; 
 }
@@ -48,5 +59,11 @@
     .project{
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-img {
+       width: 36rem;
+       height: 100%;
     }
 }
