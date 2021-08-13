@@ -1,7 +1,8 @@
 import React from 'react';
-import { InternalButton } from '../../components/button/internalButton';
-import { ExternalSecondaryButton } from  '../../components/button/externalSecondaryButton';
+
 import { aboutDescription, skills } from '../../components/context';
+
+import { InternalButton, ExternalSecondaryButton } from '../../components/button/Buttons';
 
 const About = () => {
 

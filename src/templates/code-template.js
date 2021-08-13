@@ -1,8 +1,6 @@
 import React from "react";
 import { graphql } from 'gatsby';
-
-import { ExternalSecondaryButton } from '../components/button/externalSecondaryButton';
-import { ExternalButton } from '../components/button/externalButton';
+import { ExternalButton, ExternalSecondaryButton } from '../components/button/Buttons';
 
 import Layout from '../components/layout/layout';
 import { project, md} from './template.module.css';

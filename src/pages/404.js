@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from '../components/layout/layout';
-import { InternalButton } from "../components/button/internalButton";
+import { InternalButton } from "../components/button/Buttons";
 
 const NotFoundPage = () => {
   return (
