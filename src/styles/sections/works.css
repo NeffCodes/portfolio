@@ -42,11 +42,18 @@
     height: 100%;
 }
 .tags {
-    display: flex; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    justify-content: start;
+    grid-column-gap: 1rem;
+    
 }
-.tag + .tag:before{
-    padding: 1rem;
-    content:'|';
+.tag:after{
+    content:'|';  
+    padding-left: 1rem;  
+}
+.tag:last-child:after {
+    content: ''
 }
 @media screen and (min-width: 768px){
     .project-tile{
