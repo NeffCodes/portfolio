@@ -34,7 +34,6 @@
 @media screen and (min-width: 768px) {
     .project{
         margin-top: 16rem;
-        max-width: 1240px;
     }
     .md { 
         font-size: 3.6rem; 
