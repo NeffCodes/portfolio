@@ -1,24 +1,7 @@
-export function useWindowSize() {
-  if (typeof window !== 'undefined') {
-    if(window.innerWidth){
-      return {
-        width: window.innerWidth,
-        height: window.innerHeight,
-      }
+export const getWidth = () => {
+    if(typeof window !== 'undefined'){
+      return window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
     }
-
-    if (document.documentElement.clientWidth) {
-      return {
-        width: document.documentElement.clientWidth,
-        height: document.documentElement.clientHeight,
-      }
-    }
-
-    if (document.body.clientWidth) {
-      return {
-        width: document.body.clientWidth,
-        height: document.body.clientHeight,
-      }
-    }
-  }
 }
