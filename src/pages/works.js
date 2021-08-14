@@ -10,6 +10,7 @@ export default function WorksPage({ data }) {
         <Layout pageTitle='Portfolio'>
             <section className="portfolio">
               <div className='content'>
+                <h1>Explore <span className='project-title-alt'>My Portfolio</span></h1>
                 <ul className='port-list'>
                 {page.edges
                   .filter( ({node}) => node.frontmatter.title !== 'Example')

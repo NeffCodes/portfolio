@@ -47,6 +47,11 @@ a:hover, a:focus {
     text-align: left;
 }
 
+.project-title {
+    font-size: var(--mobile-mid-font-size);
+    line-height: initial;
+}
+
 @media screen and (min-width:768px) {
     h1, h2 {
         font-size: var(--ipad-big-font-size);
@@ -67,5 +72,7 @@ a:hover, a:focus {
     .social-icon, .skill-icon {
         font-size: var(--ipad-mid-font-size);
     }
-
+    .project-title {
+        font-size: var(--ipad-mid-font-size);
+    }
 }

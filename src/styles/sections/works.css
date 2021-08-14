@@ -29,10 +29,10 @@
     color: var(--light-color);
     text-align: left;
 }
-
-.project-title {
-    line-height: initial;
+.project-title-alt{
+    display: inline-block;
 }
+
 .project-description {
     padding-bottom: 1rem;
 }
