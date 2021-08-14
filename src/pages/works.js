@@ -52,7 +52,7 @@ export default function WorksPage({ data }) {
 
 export const query = graphql`
 query works {
-  allMarkdownRemark (sort: {fields: frontmatter___date, order: ASC}) {
+  allMarkdownRemark (sort: {fields: frontmatter___date, order: DESC}) {
     edges {
       node {
         id
