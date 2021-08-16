@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { ExternalButton, ExternalSecondaryButton } from '../components/button/Buttons';
 
 import Layout from '../components/layout/layout';
@@ -7,6 +7,10 @@ import Layout from '../components/layout/layout';
 export default function TestPost({ data }) {
   const post = data.markdownRemark;
 
+  const currentNode = data.allMarkdownRemark.edges.filter( edge => edge.node.frontmatter.title === post.frontmatter.title)[0];
+  const next = currentNode.next;
+  const previous = currentNode.previous;
+  
   return (
     <Layout pageTitle={post.frontmatter.title}>
       <section className='project-page'>
@@ -25,6 +29,8 @@ export default function TestPost({ data }) {
             {post.frontmatter.sourceLink && <ExternalSecondaryButton destination={post.frontmatter.sourceLink} content='Source' icon='code'/>}
           </div>
         </div>
+        {previous && <Link to={ previous.fields.slug }>Previous</Link>}
+        {next && <Link to={ next.fields.slug }>Next</Link>}
       </section>
     </Layout>
   )
@@ -32,6 +38,34 @@ export default function TestPost({ data }) {
 
 export const query = graphql`
 query($slug: String!) {
+  allMarkdownRemark (
+    filter: {frontmatter: {title: {ne:"Example"}}}
+    sort: {fields: frontmatter___date, order: DESC}
+  ){
+    edges {
+      node {
+        frontmatter {
+          title
+        }
+      }
+      next {
+        frontmatter {
+          title
+        }
+        fields {
+          slug
+        }
+      }
+      previous {
+        frontmatter {
+          title
+        }
+        fields {
+          slug
+        }
+      }
+    }
+  }
   markdownRemark(fields: { slug: { eq: $slug } }) {
     html
     id
