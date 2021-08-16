@@ -47,7 +47,6 @@ export default function TestPost({ data }) {
 export const query = graphql`
 query($slug: String!) {
   allMarkdownRemark (
-    filter: {frontmatter: {title: {ne:"Example"}}}
     sort: {fields: frontmatter___date, order: DESC}
   ){
     edges {
