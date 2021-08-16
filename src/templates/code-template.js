@@ -29,9 +29,17 @@ export default function TestPost({ data }) {
             {post.frontmatter.sourceLink && <ExternalSecondaryButton destination={post.frontmatter.sourceLink} content='Source' icon='code'/>}
           </div>
         </div>
-        {previous && <Link to={ previous.fields.slug }>Previous</Link>}
-        {next && <Link to={ next.fields.slug }>Next</Link>}
       </section>
+      <div className='node-navigation'>
+        {previous && (<Link to={ previous.fields.slug } className='previous node'>
+          <i class="fas fa-arrow-left"></i>
+          <span className='node-text'>{previous.frontmatter.title}</span>
+        </Link>)}
+        {next && (<Link to={ next.fields.slug } className='next node'>
+          <span className='node-text'>{next.frontmatter.title}</span>
+          <i class="fas fa-arrow-right"/>
+        </Link>)}
+      </div>
     </Layout>
   )
 }
