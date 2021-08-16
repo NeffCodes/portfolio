@@ -4,12 +4,13 @@ import { InternalButton } from "../components/button/Buttons";
 
 const NotFoundPage = () => {
   return (
-    <Layout pageTitle='404'>
+    <Layout pageTitle='Error 404'>
       <section>
-        <h1>Took a wrong turn</h1>
-        <p>Uh-oh...</p>
-        <p>Looks like you got a little lost</p>
-        <InternalButton destination='/' content='Send Me back'/>
+        <div className='content'>
+          <h1>Error 404 &#128543;</h1>
+          <p>Uh-oh...could not find that page</p>
+          <InternalButton destination='/' content='Send Me back'/>
+        </div>
       </section>
     </Layout>
   )
