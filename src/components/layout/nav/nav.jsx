@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import { Link } from 'gatsby';
 import { NavItem } from './navItem';
 import { getWidth } from '../../../utils/useWindowSize';
 
@@ -27,11 +26,7 @@ const Nav = () => {
     return (
         <nav role='navigation' className='nav'>
             <ul className='nav-container'>
-                {width > 1023 && (
-                    <li className='logo-container'>
-                        <Link to='/' role="button" className='logo'>JNeff</Link>
-                    </li>)
-                }
+                {width > 1023 && (<li className='logo'>JNeff</li>)}
                 <NavItem destination='/#About' title='About' icon='far fa-user'/>
                 <NavItem destination='/works' title='Works' icon='fas fa-desktop'/>
                 <NavItem destination='/#Contact' title='Contact' icon='far fa-paper-plane'/>
