@@ -31,6 +31,41 @@
     padding: 0.4rem 0.8rem;
 }
 
+.node-navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'prev next';
+}
+.next {
+    grid-area: next;
+    justify-self: end;
+    text-align: right;
+    line-height: 1.15;
+}
+.previous {
+    grid-area: prev;
+    justify-self: start;
+    text-align: left;
+    line-height: 1.15;
+}
+.node {
+    color: var(--dark-color-tint);
+    text-transform: uppercase;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease-in;
+
+}
+.node i {
+    padding: 0 1.2rem;
+} 
+.node:hover, .node:focus {
+    color: var(--primary-color);
+}
+
 @media screen and (min-width: 768px) {
     .project-page {
         margin-top: 16rem;
