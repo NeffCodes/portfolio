@@ -28,10 +28,13 @@
     transform: scale(1.1);
     box-shadow: 0 1.1rem 1rem -1rem var(--dark-color-shade);
 }
-.logo {
-    color: var(--dark-color-tint);
+.logo-container {
     position: absolute;
     left: 6.4rem;
+}
+.logo {
+    color: var(--dark-color-tint);
+    filter: drop-shadow(-1px 1px 0 var(--dark-color-shade))
 }
 
 /* Horizontal Ipad & up */
