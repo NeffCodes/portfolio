@@ -7,7 +7,7 @@ const NotFoundPage = () => {
     <Layout pageTitle='Error 404'>
       <section>
         <div className='content'>
-          <h1>Error 404 &#128543;</h1>
+          <h1>Error 404 <span role='img' aria-hidden>&#128543;</span></h1>
           <p>Uh-oh...could not find that page</p>
           <InternalButton destination='/' content='Send Me back'/>
         </div>
