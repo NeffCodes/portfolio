@@ -20,5 +20,16 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "James Neff Personal Website",
+        short_name: "JNeff Portfolio",
+        start_url: "/",
+        background_color: "#202731;",
+        theme_color: "#e6a522",
+        icon: "src/images/favicon.png"
+      }
+    },
   ],
 };
