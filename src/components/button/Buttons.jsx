@@ -28,7 +28,7 @@ export const ExternalButton = ({destination, content}) => {
 };
 
 export const ExternalSecondaryButton = ({destination, content, icon, download}) => {
-    if(icon === 'download'){
+    if(download){
         return (
             <a 
             className={`btn secondary ${icon}`} 

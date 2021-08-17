@@ -35,7 +35,7 @@ const About = () => {
                         </div>
                         <div>
                             <InternalButton destination='/works' content='See My Work' /> 
-                            <ExternalSecondaryButton destination={ resume } content='Resume' icon='download' download={`${userName} Resume`}/>
+                            <ExternalSecondaryButton destination={ resume } content='Resume' icon='download'/>
                         </div> 
                     </div>
                 </div>   
