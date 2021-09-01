@@ -29,6 +29,6 @@ Like most of my projects, I started this project out with pen and paper, writing
 
 After I built out the site to the specified requirements, I started to fiddle around to add in a couple features that I thought would be more useful, like seeing replies to the comments. Once I had the functionality in, I went back and adjusted the styling to make it look cleaner.  
 
-## Afterwards
+## Results
 
-Although the project is completed in regards to the provided requirements, there are many things that I plan to continue working on (after all, no project is ever done, right?) I would like to improve the color scheme, and there are a couple more features that I want to add later. So keep an eye out in the future!  
+You can view the live site below. You can also check out my source code if you want to see my workflow.

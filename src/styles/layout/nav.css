@@ -13,7 +13,7 @@
 }
 .nav-item {
     color: var(--dark-color-tint);
-    flex-grow:1;
+    flex:1 1 0;
 }
 .nav-item a {
     color: var(--dark-color-tint);
@@ -27,6 +27,9 @@
     color: var(--light-color);
     transform: scale(1.1);
     box-shadow: 0 1.1rem 1rem -1rem var(--dark-color-shade);
+}
+.nav-logo {
+    display: none;
 }
 
 /* Horizontal Ipad & up */
@@ -42,5 +45,18 @@
     }
     .nav-item {
         max-width: 14%;
+    }
+    .nav-logo {
+        display:inline-block;
+        align-self: center;
+        margin-right: auto;
+        
+    }
+    .nav-logo a {
+        color: var(--dark-color-tint);
+    }
+    .nav-logo a:hover, .nav-logo a:focus{
+        color: var(--primary-color);
+        transition: 0.15s;
     }
 }

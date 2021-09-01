@@ -13,7 +13,7 @@ const Hero = () => {
                     Web Developer &amp; Graphic Designer
                 </h2>
                 <InternalButton 
-                  content='Check Me Out' 
+                  content='Learn More'
                   destination='/#About'
                 />
             </div>
