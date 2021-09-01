@@ -1,18 +1,24 @@
 export const userName = 'James Neff';
-export const email = 'james.m.neff@gmail.com';
+export const email = 'contact@jamesneff.com';
 export const resume = 'https://docs.google.com/document/d/1L86sq9O3xpTBwTgf9X73K6lNTx4qiRbds9c7YdEXpbc/edit?usp=sharing';
 
 export const aboutDescription = [
 `
-I've spent the past 9 years working across multiple areas 
-of print & digital design. I am able to provide a creative insight 
-to your next project, and I'm looking for the next challenge 
-to apply my skills to.
+I am a graphic designer and front-end developer. 
+I'm avid about interactive, accessible, and clean 
+web design. I've spent the past 9 years working across multiple 
+areas of print & digital design. With this experience, I am able 
+to provide creative insight for your next project.
  
 `,`
-These days, I have been spending my time researching, designing and 
-coding. You may also catch me learning a new board game with 
-friends, hiking, or trying out an escape room.
+These days, I spend my time researching, designing, 
+and coding. You may also catch me learning a new board game, 
+hiking, or solving an escape room.
+`,
+`
+I’m currently looking for a new role where I can collaborate 
+with other passionate individuals to build exciting product experiences. 
+I look forward to bringing my creative insight and experience to your team!
 `
 ];
 

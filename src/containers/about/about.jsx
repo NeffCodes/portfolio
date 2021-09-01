@@ -3,8 +3,7 @@ import { InternalButton, ExternalSecondaryButton } from '../../components/button
 import { 
     aboutDescription, 
     resume,
-    skills,
-    userName 
+    skills 
 } from '../../components/context';
 
 
@@ -34,7 +33,7 @@ const About = () => {
                             })}
                         </div>
                         <div>
-                            <InternalButton destination='/works' content='See My Work' /> 
+                            <InternalButton destination='/portfolio' content='See My Work' /> 
                             <ExternalSecondaryButton destination={ resume } content='Resume' icon='download'/>
                         </div> 
                     </div>
