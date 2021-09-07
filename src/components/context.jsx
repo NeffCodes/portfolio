@@ -1,6 +1,6 @@
 export const userName = 'James Neff';
-export const email = 'james.m.neff@gmail.com';
-export const resume = 'https://docs.google.com/document/d/1L86sq9O3xpTBwTgf9X73K6lNTx4qiRbds9c7YdEXpbc/edit?usp=sharing';
+export const email = 'contact@jamesneff.com';
+export const resume = 'https://drive.google.com/file/d/11C4ela1q4DTjUTzXx2szeScz6Y6gk7RI/view?usp=sharing';
 
 export const aboutDescription = [
 `
