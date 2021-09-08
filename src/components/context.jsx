@@ -4,7 +4,7 @@ export const resume = 'https://drive.google.com/file/d/11C4ela1q4DTjUTzXx2szeScz
 
 export const aboutDescription = [
 `
-I am a graphic designer and front-end developer 
+I am a graphic designer and front-end developer, 
 and I love creating interactive, accessible, clean 
 web design. I've spent the past 9 years working across multiple 
 areas of print & digital design. With this experience, I am able 
