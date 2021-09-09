@@ -29,9 +29,19 @@
     box-shadow: 0 1.1rem 1rem -1rem var(--dark-color-shade);
 }
 .nav-logo {
-    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 1rem;
+    background-color: var(--dark-color);
+    border-radius: 50px;
 }
-
+.logo{
+    width: 100%;
+    height: auto;
+}
 /* Horizontal Ipad & up */
 @media screen and (min-width: 1024px) {
     .nav {
@@ -48,10 +58,12 @@
         min-width: 15rem;
     }
     .nav-logo {
-        display:inline-block;
         align-self: center;
         margin-right: auto;
-        
+        position: inherit;
+        padding: 0;
+        width: auto;
+        height: auto;
     }
     .nav-logo path {
         fill: var(--dark-color-tint);

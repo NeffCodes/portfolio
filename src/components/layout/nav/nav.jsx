@@ -9,7 +9,7 @@ const Nav = () => {
             <ul className='nav-container'>
                 <li key='nav-logo' className='nav-logo'>
                     <Link to='/' role='button'>
-                        <Logo />
+                        <Logo className='logo'/>
                     </Link>
                 </li>
                 <NavItem destination='/#About' title='About' icon='far fa-user' classes='nav-item'/>
