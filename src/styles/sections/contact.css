@@ -1,6 +1,6 @@
 .contact {
     background-color: var(--dark-color);
-    height: calc(100vh - 246px);
+    height: 80vh;
     min-height: calc(100vh - 246px);
 }
 
