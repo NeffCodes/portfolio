@@ -28,20 +28,22 @@
     transform: scale(1.1);
     box-shadow: 0 1.1rem 1rem -1rem var(--dark-color-shade);
 }
-.nav-logo {
+.nav-logo-container {
     position: fixed;
-    top: 1rem;
+    top: 0;
     right: 1rem;
     width: 2.4rem;
     height: 2.4rem;
     padding: 1rem;
     background-color: var(--dark-color);
-    border-radius: 50px;
+    border-radius: 0 0 50px 50px;
 }
-.logo{
+.nav-logo{
     width: 100%;
     height: auto;
 }
+
+
 /* Horizontal Ipad & up */
 @media screen and (min-width: 1024px) {
     .nav {
@@ -57,7 +59,7 @@
         max-width: 14%;
         min-width: 15rem;
     }
-    .nav-logo {
+    .nav-logo-container {
         align-self: center;
         margin-right: auto;
         position: inherit;
@@ -70,7 +72,7 @@
         transition: 0.3s;
     }
     .nav-logo:hover path, 
-    .nav-logo:focus path{
+    .nav-logo:focus path {
         fill: var(--light-color);
     }
     .nav-logo:hover path:first-of-type, 
