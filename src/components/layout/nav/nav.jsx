@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { NavItem } from './navItem';
-import Logo from '../../../images/assets/logo.svg';
+import Logo from '../../../images/assets/basic_logo.svg';
 
 const Nav = () => {
     return (

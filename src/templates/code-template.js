@@ -32,7 +32,7 @@ export default function TestPost({ data }) {
       </section>
       <div className='node-navigation'>
         {previous && (<Link to={ previous.fields.slug } className='previous node'>
-          <i class="fas fa-arrow-left"></i>
+          <i className="fas fa-arrow-left"></i>
           <span className='node-text'>{previous.frontmatter.title}</span>
         </Link>)}
         {next && (<Link to={ next.fields.slug } className='next node'>
