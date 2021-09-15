@@ -4,7 +4,7 @@ date: '2014-11'
 tags: ['Web Design']
 featuredImage: '../../images/Index-Journal.png'
 imageAlt: 'Screenshot of Index-Journal website.'
-description: "Award Winning redesign of Index-Journal's website"
+description: "Award-winning redesign of newspaper website"
 mainLink: ''
 sourceLink: ''
 ---

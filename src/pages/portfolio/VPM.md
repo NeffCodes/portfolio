@@ -4,7 +4,7 @@ date: '2015-12'
 tags: ['Web Design', 'UI/UX']
 featuredImage: '../../images/VPM.png'
 imageAlt: 'Screenshot of VPM website.'
-description: "Vision Property Management's website overhaul"
+description: "Website overhaul for company website"
 mainLink: ''
 sourceLink: ''
 ---
