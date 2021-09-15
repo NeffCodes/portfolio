@@ -81,7 +81,6 @@
   border-left: 1rem solid var(--primary-color);
   padding: 2rem 1rem;
   margin-left: 2rem;
-  width: 20%;
   font-size: var(--mobile-default-font-size);
 }
 
@@ -138,5 +137,8 @@
     .individual span {
         width: 25%;
         margin: 0 !important;
+    }
+    .individual figcaption {
+        width: 20%;
     }
 }
