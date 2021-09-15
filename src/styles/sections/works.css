@@ -43,7 +43,8 @@
 }
 .tags {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    white-space: pre; 
 }
 .tag:after{
     content:'|';  
