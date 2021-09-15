@@ -1,7 +1,7 @@
 ---
 title: "Duke Energy Bannerstand"
 date: '2011-10'
-tags: ['Skyline Exhibits & Design', 'Environmental Design', 'Graphic Design']
+tags: ['Environmental Design', 'Graphic Design']
 featuredImage: '../../images/duke/duke-logo.png'
 imageAlt: 'Duke Energy logo.'
 description: 'Display design for company expo'
