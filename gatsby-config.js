@@ -26,7 +26,7 @@ module.exports = {
         name: "James Neff Personal Website",
         short_name: "JNeff Portfolio",
         start_url: "/",
-        background_color: "#202731;",
+        background_color: "#202731",
         theme_color: "#e6a522",
         icon: "src/images/favicon.png"
       }
