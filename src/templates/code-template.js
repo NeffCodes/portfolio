@@ -4,7 +4,7 @@ import { ExternalButton, ExternalSecondaryButton } from '../components/button/Bu
 
 import Layout from '../components/layout/layout';
 
-export default function TestPost({ data }) {
+export default function CodeTemplate({ data }) {
   const post = data.markdownRemark;
 
   const currentNode = data.allMarkdownRemark.edges.filter( edge => edge.node.frontmatter.title === post.frontmatter.title)[0];

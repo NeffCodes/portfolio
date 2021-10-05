@@ -12,10 +12,12 @@
     --light-color: #f9f9f9;
 
     /*____FONT SIZE____*/
+    --mobile-small-font-size: 1.2rem;
     --mobile-default-font-size: 1.6rem;
     --mobile-big-font-size: 4rem;
     --mobile-mid-font-size: 2.5rem;
 
+    --ipad-small-font-size: 1.6rem;
     --ipad-default-font-size: 2.5rem;
     --ipad-big-font-size: 6.4rem;
     --ipad-mid-font-size: 3.6rem;

@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout/layout';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
-export default function WorksPage({ data }) {
+export default function PortfolioPage({ data }) {
     const page = data.allMarkdownRemark;
     
     return(
@@ -51,7 +51,7 @@ export default function WorksPage({ data }) {
 }
 
 export const query = graphql`
-query works {
+query portfolio {
   allMarkdownRemark (sort: {fields: frontmatter___date, order: DESC}) {
     edges {
       node {

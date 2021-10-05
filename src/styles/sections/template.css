@@ -66,46 +66,6 @@
     color: var(--primary-color);
 }
 
-/*___ Figure|Photo Arrangements ___*/
-
-.individual {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
-.individual span {
-    width: 70%;
-}
-.individual figcaption {
-  align-self: flex-end;
-  border-left: 1rem solid var(--primary-color);
-  padding: 2rem 1rem;
-  margin-left: 2rem;
-  font-size: var(--mobile-default-font-size);
-}
-
-.triptych{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 3.2rem;
-}
-.triptych figure{
-    flex: 0 2 21rem;
-    margin: 2rem auto;
-}
-.triptych figure span{
-    box-shadow: 0 2px 3px lightgrey;
-}
-
-.triptych figcaption{
-    color: var(--dark-color-tint);
-    font-size: var(--ipad-default-font-size);
-    font-weight: bold;
-    border-bottom: 4px solid var(--primary-color);
-    width: 80%;
-    margin-bottom: 0.6rem;
-}
-
 @media screen and (min-width: 768px) {
     .project-page {
         margin-top: 16rem;
@@ -130,15 +90,89 @@
         margin-left: 3.6rem;
         padding: 0.8rem 1.2rem;
     }
-    
+}
+
+/*___ Figure|Photo Arrangements ___*/
+/*___ block width*/
+.w25-percent{
+    width: 25%;
+}
+.w30-percent{
+    width: 30%;
+    min-width: 20rem;
+}
+.w100-percent{
+    width: 100%;
+}
+/*___ image width*/
+.iw25-percent span{
+    width: 25%;
+}
+.iw30-percent span{
+    width: 30%;
+}
+.iw100-percent span{
+    width: 100%;
+}
+
+/*_____ individual */
+.individual {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.individual span{
+    width: 100%;
+}
+
+.individual figcaption {
+  align-self: flex-end;
+  border-left: 1rem solid var(--primary-color);
+  padding: 2rem 1rem;
+  margin-left: 2rem;
+  font-size: var(--mobile-default-font-size);
+}
+
+@media screen and (min-width: 768px) {
     .individual {
         justify-content: center;
     }
     .individual span {
-        width: 25%;
         margin: 0 !important;
     }
     .individual figcaption {
         width: 20%;
+    }
+
+}
+
+/*_____ triptych */
+.triptych{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 3.2rem;
+}
+.triptych figure{
+    flex: 0 2 auto;
+    margin: 2rem 0;
+}
+.triptych figure span{
+    box-shadow: 0 2px 3px lightgrey;
+}
+
+.triptych figcaption{
+    color: var(--dark-color-tint);
+    font-size: var(--mobile-small-font-size);
+    font-weight: bold;
+    border-bottom: 4px solid var(--primary-color);
+    width: 80%;
+    margin-bottom: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+    .triptych figcaption{
+        font-size: var(--ipad-default-font-size);
     }
 }
