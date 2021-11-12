@@ -34,7 +34,7 @@ const About = () => {
                         </div>
                         <div>
                             <InternalButton destination='/portfolio' content='See My Work' /> 
-                            <ExternalSecondaryButton destination={ resume } content='Resume' icon='download'/>
+                            {resume ? (<ExternalSecondaryButton destination={ resume } content='Resume' icon='download'/>) : null}
                         </div> 
                     </div>
                 </div>   
